@@ -1,6 +1,6 @@
 # What is a Webstile?
 
-Webstiles is an easy tool to help you prototype in the browser. It is a type of design deliverable, heavily inspired from Style Tiles.
+Webstiles is a template to help you prototype in the browser. It is a type of design deliverable, heavily inspired from Style Tiles.
 
 Webstiles tell the mood of the website, by defining typography, colors, layout and buttons. They help communication between the designer and the client, and are a step before full-fledged mockups, but one step after wireframes.
 
