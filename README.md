@@ -6,6 +6,15 @@ Webstiles tell the mood of the website, by defining typography, colors, layout a
 
 Download webstiles' template and mess around!
 
+# How To
+
+1. Step 1: Download the download the template
+2. Step 2: Open up it's CSS and HTML files.
+3. Step 3: In the CSS, change the colors. Search for 'tomato', and replace with primary color. Search for 'skyblue' and replace with secondary color. Search for 'midnightblue' and replace with tertiary color. Edit the fonts in the body and headings (search for h1, h2, h3).
+Then, change the background colors in color blocks (search 'color').
+4. Step 4: You're almost done. In the HTML, change the adjectives, and the headings/slogans. Remove any elements by commenting them off (Tip: Included helpful quick commenting. You only need to remove the '-->' after the name, example, <!-- @Adjectives -->, remove the -->)
+5. Step 5: You're done! Zip it, and put it on your host and send the URL to your client, or start building the actual website!
+
 # Hmm… But why should I use webstiles?
 
 Usually, clients require more than 1 concept designs. Instead of creating a full mockup, you can create a few webstiles quickly, and send those over, to judge their mood and reactions. When you think you know exactly what the client wants, you can send over a mockup! BAM!
