@@ -11,7 +11,7 @@ Download webstiles' template and mess around!
 1. Download the template.
 2. Open up its CSS and HTML files.
 3. In the CSS, change the colors, link styles, typography, and masthead styles.
-4. You're almost done. In the HTML, change the adjectives.
+4. You're almost done. In the HTML, change the adjectives, and footer information.
 5. You're done! Send it to your client, or start building the site!
 
 # Hmm… But why should I use webstiles?
