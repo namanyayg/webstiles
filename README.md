@@ -8,39 +8,37 @@ Download webstiles' template and mess around!
 
 # How To
 
-1. Step 1: Download the download the template
-2. Step 2: Open up it's CSS and HTML files.
-3. Step 3: In the CSS, change the colors. Search for 'tomato', and replace with primary color. Search for 'skyblue' and replace with secondary color. Search for 'midnightblue' and replace with tertiary color. Edit the fonts in the body and headings (search for h1, h2, h3).
-Then, change the background colors in color blocks (search 'color').
-4. Step 4: You're almost done. In the HTML, change the adjectives, and the headings/slogans. Remove any elements by commenting them off (Tip: Included helpful quick commenting. You only need to remove the '-->' after the name, example, <!-- @Adjectives -->, remove the -->)
-5. Step 5: You're done! Zip it, and put it on your host and send the URL to your client, or start building the actual website!
+1. Download the template.
+2. Open up its CSS and HTML files.
+3. In the CSS, change the colors, link styles, typography, and masthead styles.
+4. You're almost done. In the HTML, change the adjectives.
+5. You're done! Send it to your client, or start building the site!
 
 # Hmm… But why should I use webstiles?
 
 Usually, clients require more than 1 concept designs. Instead of creating a full mockup, you can create a few webstiles quickly, and send those over, to judge their mood and reactions. When you think you know exactly what the client wants, you can send over a mockup! BAM!
 
-Webstiles are also useful when doing any type of web design work. They help you bring your idea to paper, and you don't spend a lot of time worrying on details on the final site — they are already finalized in your webstile!
+Webstiles are also useful when doing any type of web design work. They help you bring your idea to paper, and you don't spend a lot of time worrying on details on the final site&mdash;they are already finalized in your webstile!
 
-TL;DR Webstiles are a quick and easy to way to bring your idea to life
+This all is done by [Style Tiles](http://styletil.es) as well&mdash;what makes webstiles different is that all the above is done in the browser. You don't hand a static, simple image to the client, you hand a website that the client opens in the browser. Each webstile is fully responsive, so the client can view it anywhere and have a better idea of how his own site is going to look.
+
+TL;DR Webstiles are a quick and easy to way to bring your web design to life and iterate quickly.
 
 # Why Webstiles?
 
-Webstiles evolved as a personal need. I loved the concept of Style Tiles, but hated PS at the same time (I use complex baseline grids in my web design work, and PS wasn't really best for that), so I took the responsibility of making Webstiles. When came to use it more and more, I realized that other people could benefit from it too, and you can see the result!
+Webstiles evolved as a personal need. I loved the concept of Style Tiles, but hated PS at the same time (I use the baseline grids in my web design work, and PS wasn't really best for that), so I took the responsibility of making Webstiles. When came to use it more and more, I realized that other people could benefit from it too, and you can see the result!
 
 ## Features
 
-Webstiles shares a lot of common features with Style Tiles, but has a few key changes, and introduces some new concepts like
+Webstiles shares a lot of common features with Style Tiles, but has a few key changes. Webstiles allow you to define:
 
 * Colors
 * Typography
 * Form
 * Buttons
 * Adjectives [Mood]
-* Headlines/slogans [Mood]
 
-All which help to design a full website.
-
-One thing to note is that the left column of webstiles largely defines mood, while the right deals with the techinical stuff.
+&hellip;All which are immensely useful in designing a website.
 
 ## Signing off
 
