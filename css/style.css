@@ -263,12 +263,13 @@ h5, h6 {
 .menu li {
   list-style: none;
   display: inline-block;
-  margin-left: 1em;
+  margin: 0 0 .5em .5em;
 }
 
 .menu a {
   padding: .5em;
   border: .25em solid deepskyblue;
+  display: block;
 }
 
 .menu a:hover {
