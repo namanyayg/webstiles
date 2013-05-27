@@ -26,7 +26,7 @@ Finally, since webstiles is a web template, it gives your client a much better i
 
 Webstiles evolved as a personal need. I loved the concept of Style Tiles, but disliked designing in Photoshop, so I took the liberty of making Webstiles. When I came to use it more and more, I realized that other people could benefit from it too, and here we are!
 
-## Signing off
+# Signing off
 
 I now use webstiles in pretty much every project of mine — and I believe you should too.
 
