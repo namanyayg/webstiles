@@ -1,0 +1,28 @@
+/*! Sympl http://github.com/namanyayg/sympl | MIT License | Namanyay Goel http://namanyayg.com/ */
+/*! Sympl.css v3.0.0 sympl.namanyayg.com |
+Namanyay Goel | www.namanyayg.com | @namanyayg */
+@import 'partials/normalize';
+@import 'partials/core';
+@import 'partials/grids';
+@import 'partials/mq';
+@import 'partials/custom';
+@import 'partials/masthead';
+@import 'partials/colors';
+@import 'partials/forms';
+@import 'partials/typography';
+
+/*** =ADJECTIVES ***/
+.ws-adjectives div {
+  font-size: 1.5em;
+  padding-bottom: .25em;
+}
+
+/*** =COLOPHON ***/
+.colophon { 
+  clear: both; 
+  text-align: center; 
+  font-size: .875em; 
+  padding: 1.714em 0;
+  border-top: thin solid #eee;
+  margin-top: 1.714em;
+}

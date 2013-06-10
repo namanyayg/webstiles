@@ -8,11 +8,39 @@ Webstiles tell the mood of the website, by defining typography, colors, layout a
 
 # How To
 
+_These direction are for editing the CSS directly (which is certainly a fine way to go and still possible). However, if you'd like to contribute and/or leverage Sass, please see [the Sass How To](#sass-how-to) section below._
+
 1. Download the template
 2. Open up its CSS and HTML files.
 3. In the CSS, change the colors and typefaces. The primary sans typeface used is Tahoma, while the primary serif typeface is Georgia. The primary color is deepskyblue, the secondary color is gold, and tertiary colors are #eee, darkslategray, gainsboro, and saddlebrown. Search and replace!
 4. You’re almost done. In the HTML, change the adjectives, and the headings/slogans. Remove any elements you don’t want.
 5. You’re done! Upload it for client feedback, or send to your team!
+
+# Sass How To
+
+The directions are essentially the same as the main How To, but instead, you'll be editing the files in the `./sass/*` directory. Please see the following resources for more information if you're new to Sass (or just go ahead and edit the CSS directly if you're looking for a quick one-off solution and don't have time for all this Sass stuff!):
+
+* [Setting up for Sass development][settingup]
+* [Compass/Sass chapter][sasschapter]
+
+[settingup]: https://github.com/roblevintennis/rapid-prototyping-book/blob/master/chapters/02_setting_up_for_rapid_dev.md
+[sasschapter]: https://github.com/roblevintennis/rapid-prototyping-book/blob/master/chapters/03_compass_sass.md
+
+If you just want to edit and go:
+
+```bash
+# Windows
+$ gem install compass
+# Linux/OS X
+$ sudo gem install compass
+```
+
+Now, while in this project's root directory, open a new onsole tab and watch for any changes (or use the free tool [Scout][scout] if you're more GUI inclined):
+```
+compass watch
+```
+
+[scout]: http://mhs.github.io/scout-app/
 
 # Hmm… But why should I use webstiles?
 
