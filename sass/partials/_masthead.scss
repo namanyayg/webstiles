@@ -1,0 +1,34 @@
+
+
+/*** =MASTHEAD ***/
+
+.masthead { background: #f6f6f6; overflow: hidden; margin-bottom: 1.5em; }
+
+.logo h1 { 
+  margin: 0; 
+  float: left; 
+  padding: .5em 0;
+  font-family: Tahoma, sans-serif;
+  font-size: 2em;
+  line-height: 1;
+}
+
+.menu { float: right; }
+.menu ul { padding: 1.5em 0; margin: 0; }
+
+.menu li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 0 .5em .5em;
+}
+
+.menu a {
+  padding: .5em;
+  border: .25em solid deepskyblue;
+  display: block;
+}
+
+.menu a:hover {
+  background: deepskyblue;
+  color: white;
+}
