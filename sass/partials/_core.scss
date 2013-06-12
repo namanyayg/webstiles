@@ -1,0 +1,30 @@
+/*
+=Core
+*/
+body {
+  margin: 0; padding: 0;
+}
+
+/* Remember to use normalize or a reset! */
+
+body, input, textarea, button, form, select {
+  font: 100%/1.5 'Tahoma', sans-serif;
+  color: $medium-black;
+  /* Inputs, forms, etc, can have weird font styles */
+}
+
+a, a:link, a:visited {
+  text-decoration: none;
+  color: $blueSky;
+  border-bottom: thin solid transparent;
+
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+a:hover, a:active, a:focus {
+  border-bottom-color: $gray-light;
+}

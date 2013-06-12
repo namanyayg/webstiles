@@ -1,0 +1,3 @@
+[submodule "sass/colors"]
+	path = sass/colors
+	url = git://github.com/RichardBray/color-me-sass.git
