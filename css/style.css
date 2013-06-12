@@ -971,42 +971,6 @@ a:hover, a:active, a:focus {
   color: white;
 }
 
-/*** =COLOR ***/
-/* line 5, ../sass/partials/_colors.scss */
-[class^="color"] {
-  height: 5em;
-}
-
-/* line 9, ../sass/partials/_colors.scss */
-.color-1 {
-  background: tomato;
-}
-
-/* line 10, ../sass/partials/_colors.scss */
-.color-2 {
-  background: gold;
-}
-
-/* line 11, ../sass/partials/_colors.scss */
-.color-3 {
-  background: deepskyblue;
-}
-
-/* line 12, ../sass/partials/_colors.scss */
-.color-4 {
-  background: darkslategray;
-}
-
-/* line 13, ../sass/partials/_colors.scss */
-.color-5 {
-  background: gainsboro;
-}
-
-/* line 14, ../sass/partials/_colors.scss */
-.color-6 {
-  background: saddlebrown;
-}
-
 /*** =FORM ***/
 /* line 4, ../sass/partials/_forms.scss */
 .ws-form {
@@ -1145,15 +1109,62 @@ h5, h6 {
   text-transform: uppercase;
 }
 
+/*
+ *
+ * Color Me SASS v1.0
+ * Built and Designed by Richard Bray
+ *
+ */
+/* line 14, ../sass/partials/_base.scss */
+.foo {
+  color: #ff9900;
+}
+
+/*** =COLOR ***/
+/* line 5, ../sass/partials/_colors.scss */
+[class^="color"] {
+  height: 5em;
+}
+
+/* line 9, ../sass/partials/_colors.scss */
+.color-1 {
+  background: #d42c2c;
+}
+
+/* line 10, ../sass/partials/_colors.scss */
+.color-2 {
+  background: gold;
+}
+
+/* line 11, ../sass/partials/_colors.scss */
+.color-3 {
+  background: #73c2fb;
+}
+
+/* line 12, ../sass/partials/_colors.scss */
+.color-4 {
+  background: #36454f;
+}
+
+/* line 13, ../sass/partials/_colors.scss */
+.color-5 {
+  background: silver;
+}
+
+/* line 14, ../sass/partials/_colors.scss */
+.color-6 {
+  background: #7b3f00;
+}
+
 /*** =ADJECTIVES ***/
-/* line 15, ../sass/partials/_base.scss */
+/* line 18, ../sass/partials/_base.scss */
 .ws-adjectives div {
   font-size: 1.5em;
   padding-bottom: .25em;
 }
 
 /*** =COLOPHON ***/
-/* line 21, ../sass/partials/_base.scss */
+/* line 24, ../sass/partials/_base.scss */
 .colophon {
   clear: both;
   text-align: center;

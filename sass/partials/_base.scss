@@ -7,9 +7,12 @@ Namanyay Goel | www.namanyayg.com | @namanyayg */
 @import 'partials/mq';
 @import 'partials/custom';
 @import 'partials/masthead';
-@import 'partials/colors';
 @import 'partials/forms';
 @import 'partials/typography';
+
+@import 'colors/color-me-sass';
+.foo {color: $amber; }
+@import 'partials/colors';
 
 /*** =ADJECTIVES ***/
 .ws-adjectives div {
@@ -18,10 +21,10 @@ Namanyay Goel | www.namanyayg.com | @namanyayg */
 }
 
 /*** =COLOPHON ***/
-.colophon { 
-  clear: both; 
-  text-align: center; 
-  font-size: .875em; 
+.colophon {
+  clear: both;
+  text-align: center;
+  font-size: .875em;
   padding: 1.714em 0;
   border-top: thin solid #eee;
   margin-top: 1.714em;
