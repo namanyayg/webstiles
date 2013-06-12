@@ -26,7 +26,13 @@ The directions are essentially the same as the main How To, but instead, you'll 
 [settingup]: https://github.com/roblevintennis/rapid-prototyping-book/blob/master/chapters/02_setting_up_for_rapid_dev.md
 [sasschapter]: https://github.com/roblevintennis/rapid-prototyping-book/blob/master/chapters/03_compass_sass.md
 
-If you just want to edit and go:
+If you just want to edit and go and you've obtained this via `git clone`, you'll need to enable the submodule for `color-me-sass` as follows:
+
+```bash
+git submodule init && git submodule update
+```
+
+Then simply do the following to set up Compass / Sass:
 
 ```bash
 # Windows
@@ -35,7 +41,8 @@ $ gem install compass
 $ sudo gem install compass
 ```
 
-Now, while in this project's root directory, open a new onsole tab and watch for any changes (or use the free tool [Scout][scout] if you're more GUI inclined):
+Now, while in this project's root directory, open a new terminal tab and watch for any changes (or use the free tool [Scout][scout] if you're more GUI inclined) with:
+
 ```
 compass watch
 ```
