@@ -9,13 +9,13 @@ body {
 
 body, input, textarea, button, form, select {
   font: 100%/1.5 'Tahoma', sans-serif;
-  color: #444;
+  color: $medium-black;
   /* Inputs, forms, etc, can have weird font styles */
 }
 
 a, a:link, a:visited {
   text-decoration: none;
-  color: deepskyblue;
+  color: $blueSky;
   border-bottom: thin solid transparent;
 
   -webkit-transition: all .3s ease;
@@ -26,5 +26,5 @@ a, a:link, a:visited {
 }
 
 a:hover, a:active, a:focus {
-  border-bottom-color: #ddd;
+  border-bottom-color: $gray-light;
 }

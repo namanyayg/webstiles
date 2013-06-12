@@ -580,6 +580,59 @@ table {
 }
 
 /*
+ *
+ * Color Me SASS v1.0
+ * Built and Designed by Richard Bray
+ *
+ */
+/*** =COLOR ***/
+/* line 5, ../sass/partials/_colors.scss */
+[class^="color"] {
+  height: 5em;
+}
+
+/* line 9, ../sass/partials/_colors.scss */
+.color-1 {
+  background: crimson;
+}
+
+/* line 10, ../sass/partials/_colors.scss */
+.color-2 {
+  background: gold;
+}
+
+/* line 11, ../sass/partials/_colors.scss */
+.color-3 {
+  background: #73c2fb;
+}
+
+/* line 12, ../sass/partials/_colors.scss */
+.color-4 {
+  background: #36454f;
+}
+
+/* line 13, ../sass/partials/_colors.scss */
+.color-5 {
+  background: silver;
+}
+
+/* line 14, ../sass/partials/_colors.scss */
+.color-6 {
+  background: #7b3f00;
+}
+
+/* line 26, ../sass/partials/_colors.scss */
+fieldset {
+  border-color: silver;
+}
+
+/* line 27, ../sass/partials/_colors.scss */
+mark {
+  background: #ffcc00;
+  color: black;
+}
+
+/*
 =Core
 */
 /* line 4, ../sass/partials/_core.scss */
@@ -592,14 +645,14 @@ body {
 /* line 10, ../sass/partials/_core.scss */
 body, input, textarea, button, form, select {
   font: 100%/1.5 "Tahoma", sans-serif;
-  color: #444;
+  color: #444444;
   /* Inputs, forms, etc, can have weird font styles */
 }
 
 /* line 16, ../sass/partials/_core.scss */
 a, a:link, a:visited {
   text-decoration: none;
-  color: deepskyblue;
+  color: #73c2fb;
   border-bottom: thin solid transparent;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -610,7 +663,7 @@ a, a:link, a:visited {
 
 /* line 28, ../sass/partials/_core.scss */
 a:hover, a:active, a:focus {
-  border-bottom-color: #ddd;
+  border-bottom-color: #dddddd;
 }
 
 /*
@@ -918,7 +971,7 @@ a:hover, a:active, a:focus {
 /* line 16, ../sass/partials/_custom.scss */
 .ws-item > h1 {
   font-size: .875em;
-  color: #999;
+  color: #999999;
   margin: 0 0 1.714em 0;
 }
 
@@ -961,14 +1014,14 @@ a:hover, a:active, a:focus {
 /* line 25, ../sass/partials/_masthead.scss */
 .menu a {
   padding: .5em;
-  border: 0.25em solid deepskyblue;
+  border: 0.25em solid #73c2fb;
   display: block;
 }
 
 /* line 31, ../sass/partials/_masthead.scss */
 .menu a:hover {
-  background: deepskyblue;
-  color: white;
+  background: #73c2fb;
+  color: whitesmoke;
 }
 
 /*** =FORM ***/
@@ -979,7 +1032,7 @@ a:hover, a:active, a:focus {
 
 /* line 6, ../sass/partials/_forms.scss */
 input, textarea {
-  /* Use for styling text based form elements, like name, email, password. 
+  /* Use for styling text based form elements, like name, email, password.
   Button/submit specific styles below, those will override */
   display: block;
   padding: .5em;
@@ -1000,7 +1053,7 @@ input, textarea {
 /* line 28, ../sass/partials/_forms.scss */
 input:focus, textarea:focus {
   outline: none;
-  border-color: deepskyblue;
+  border-color: #73c2fb;
 }
 
 /* line 33, ../sass/partials/_forms.scss */
@@ -1009,10 +1062,10 @@ input[type='button'], input[type='submit'], button, .button {
   background: transparent;
   line-height: 1;
   cursor: pointer;
-  background: deepskyblue;
+  background: #73c2fb;
   padding: 1em 1.5em;
   border: 0.25em solid rgba(0, 0, 0, 0.1);
-  color: white;
+  color: whitesmoke;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -1047,7 +1100,7 @@ input[type='button']:active, input[type='submit']:active, button:active, .button
 /* line 73, ../sass/partials/_forms.scss */
 .btn-tertiary {
   font-size: .875em;
-  background: #999;
+  background: #999999;
 }
 
 /*
@@ -1068,7 +1121,7 @@ p + p {
 h1, h2, h3, h4, h5, h6 {
   /* Set defaults for all headings here,
   you might want to change fonts or sizes */
-  color: #222;
+  color: #222222;
   font-weight: 400;
   font-family: Georgia;
 }
@@ -1107,53 +1160,6 @@ h5, h6 {
   line-height: 1.5;
   margin: 0.75em 0;
   text-transform: uppercase;
-}
-
-/*
- *
- * Color Me SASS v1.0
- * Built and Designed by Richard Bray
- *
- */
-/* line 14, ../sass/partials/_base.scss */
-.foo {
-  color: #ff9900;
-}
-
-/*** =COLOR ***/
-/* line 5, ../sass/partials/_colors.scss */
-[class^="color"] {
-  height: 5em;
-}
-
-/* line 9, ../sass/partials/_colors.scss */
-.color-1 {
-  background: #d42c2c;
-}
-
-/* line 10, ../sass/partials/_colors.scss */
-.color-2 {
-  background: gold;
-}
-
-/* line 11, ../sass/partials/_colors.scss */
-.color-3 {
-  background: #73c2fb;
-}
-
-/* line 12, ../sass/partials/_colors.scss */
-.color-4 {
-  background: #36454f;
-}
-
-/* line 13, ../sass/partials/_colors.scss */
-.color-5 {
-  background: silver;
-}
-
-/* line 14, ../sass/partials/_colors.scss */
-.color-6 {
-  background: #7b3f00;
 }
 
 /*** =ADJECTIVES ***/

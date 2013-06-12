@@ -4,9 +4,9 @@
 
 .masthead { background: #f6f6f6; overflow: hidden; margin-bottom: 1.5em; }
 
-.logo h1 { 
-  margin: 0; 
-  float: left; 
+.logo h1 {
+  margin: 0;
+  float: left;
   padding: .5em 0;
   font-family: Tahoma, sans-serif;
   font-size: 2em;
@@ -24,11 +24,11 @@
 
 .menu a {
   padding: .5em;
-  border: .25em solid deepskyblue;
+  border: .25em solid $blueSky;
   display: block;
 }
 
 .menu a:hover {
-  background: deepskyblue;
-  color: white;
+  background: $blueSky;
+  color: $whiteSmoke;
 }

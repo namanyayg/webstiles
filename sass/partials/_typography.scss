@@ -10,7 +10,7 @@ p + p { margin-top: 1.5em; }
 h1, h2, h3, h4, h5, h6 {
     /* Set defaults for all headings here,
     you might want to change fonts or sizes */
-    color: #222;
+    color: $black;
     font-weight: 400;
     font-family: Georgia;
 }
