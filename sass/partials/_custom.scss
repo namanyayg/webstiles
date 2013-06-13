@@ -1,0 +1,20 @@
+
+/*====================
+=CUSTOM
+====================*/
+
+.wrap {
+  width: 80em;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.ws-item {
+  margin-bottom: 3em;
+}
+
+.ws-item > h1 {
+  font-size: .875em;
+  color: $gray-dark;
+  margin: 0 0 1.714em 0;
+}

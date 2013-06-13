@@ -1,0 +1,27 @@
+
+
+/*** =COLOR ***/
+
+[class^="color"] {
+  height: 5em;
+}
+
+.color-1 { background: $redCrimson; }
+.color-2 { background: $yellowGold; }
+.color-3 { background: $blueSky; }
+.color-4 { background: $grayCharcoal; }
+.color-5 { background: $graySilver; }
+.color-6 { background: $brownChocolate; }
+
+// Custom colors
+$hard-black: #000;
+$black: #222;
+$medium-black: #444;
+$gray-dark: #999;
+$gray-light: #ddd;
+$soft-white: #eee;
+
+// normalize overrides (essentially the same but put here
+// so we can more easily keep track of these later)
+fieldset {border-color: $graySilver;}
+mark {background: $yellow; color: $hard-black;}

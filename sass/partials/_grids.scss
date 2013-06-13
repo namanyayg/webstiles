@@ -1,0 +1,54 @@
+
+/*
+=Grid
+*/
+
+.stack {
+  /* A set of grid items must be in a stack.
+  Use sympl-stack when you want a margin at the bottom */
+  clear: both;
+  margin: 0 0 0 -1.5em;
+}
+
+.stack-sympl {
+  padding-bottom: 1.5em;
+}
+
+.stack-clean { padding-bottom: 0; padding-top: 1.5em; }
+.stack-clean .sympl { padding-bottom: 1.5em; }
+
+.sympl {
+  /* Each grid item should have the sympl class, along with at least one class for size */
+  float: left;
+  padding: 0 0 0 1.5em;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.stack:before,
+.stack:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.stack:after {
+    clear: both;
+}
+
+.half, .twoquarters, .threesixths { width: 50%; }
+
+.onethird, .twosixths { width: 33.333333%; }
+.twothirds, .foursixths { width: 66.666666%; }
+
+.quarter { width: 25%; }
+.three-quarters { width: 75%; }
+
+.onefifth { width: 20%; }
+.twofifths { width: 40%; }
+.threefifths { width: 60%; }
+.fourfifths { width: 80%; }
+
+.onesixth { width: 16.666666%; }
+.fivesixths { width: 83.333333%; }
