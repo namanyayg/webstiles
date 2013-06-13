@@ -14,14 +14,18 @@
 .color-6 { background: $brownChocolate; }
 
 // Custom colors
-$hard-black: #000;
+// BLacks .. using lighten / darken so we only need one base black defined
 $black: #222;
-$medium-black: #444;
-$gray-dark: #999;
-$gray-light: #ddd;
+$medium-black: lighten($black, 12%);   // #414141
+$hard-black: darken($black, 14%);      // #000
+// Whites/Grays
 $soft-white: #eee;
+$gray-light: darken($soft-white, 11%); // #d2d2d2
+$gray-dark: darken($gray-light, 20%);  // #9f9f9f
 
 // normalize overrides (essentially the same but put here
 // so we can more easily keep track of these later)
 fieldset {border-color: $graySilver;}
-mark {background: $yellow; color: $hard-black;}
+mark {background: $yellowGold; color: $hard-black;}
+
+

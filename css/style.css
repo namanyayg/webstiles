@@ -579,6 +579,9 @@ table {
   border-spacing: 0;
 }
 
+/**
+ * Downloaded from: https://github.com/lloydk/font-stack/blob/master/lib/stylesheets/_font-stack.scss
+ */
 /*
  *
  * Color Me SASS v1.0
@@ -621,14 +624,14 @@ table {
   background: #7b3f00;
 }
 
-/* line 26, ../sass/partials/_colors.scss */
+/* line 28, ../sass/partials/_colors.scss */
 fieldset {
   border-color: silver;
 }
 
-/* line 27, ../sass/partials/_colors.scss */
+/* line 29, ../sass/partials/_colors.scss */
 mark {
-  background: #ffcc00;
+  background: gold;
   color: black;
 }
 
@@ -644,8 +647,8 @@ body {
 /* Remember to use normalize or a reset! */
 /* line 10, ../sass/partials/_core.scss */
 body, input, textarea, button, form, select {
-  font: 100%/1.5 "Tahoma", sans-serif;
-  color: #444444;
+  font: 100%/1.5 Tahoma, Geneva, Verdana, sans-serif;
+  color: #414141;
   /* Inputs, forms, etc, can have weird font styles */
 }
 
@@ -663,7 +666,7 @@ a, a:link, a:visited {
 
 /* line 28, ../sass/partials/_core.scss */
 a:hover, a:active, a:focus {
-  border-bottom-color: #dddddd;
+  border-bottom-color: #d2d2d2;
 }
 
 /*
@@ -967,12 +970,59 @@ a:hover, a:active, a:focus {
 .ws-item {
   margin-bottom: 3em;
 }
-
-/* line 16, ../sass/partials/_custom.scss */
+/* line 14, ../sass/partials/_custom.scss */
 .ws-item > h1 {
   font-size: .875em;
-  color: #999999;
-  margin: 0 0 1.714em 0;
+  color: #9f9f9f;
+  margin: 1em 0 1em 0;
+}
+/* line 19, ../sass/partials/_custom.scss */
+.ws-item h1:first-of-type {
+  margin: 0em 0 1em 0;
+}
+
+/*** =ADJECTIVES ***/
+/* line 25, ../sass/partials/_custom.scss */
+.ws-adjectives div {
+  font-size: 1.5em;
+  padding-bottom: .25em;
+}
+
+/* line 31, ../sass/partials/_custom.scss */
+.ws-item.ws-adjectives {
+  margin-bottom: 1em;
+}
+
+/* line 34, ../sass/partials/_custom.scss */
+.ws-settings {
+  border: 0.25em solid #eeeeee;
+  padding: 10px;
+}
+/* line 37, ../sass/partials/_custom.scss */
+.ws-settings .stack {
+  margin-bottom: .5em;
+}
+
+/* line 41, ../sass/partials/_custom.scss */
+.ws-code {
+  padding: 10px;
+}
+/* line 44, ../sass/partials/_custom.scss */
+.ws-code > h1 {
+  font-size: .875em;
+  color: #9f9f9f;
+  margin: 1em 0 1em 0;
+}
+
+/*** =COLOPHON ***/
+/* line 51, ../sass/partials/_custom.scss */
+.colophon {
+  clear: both;
+  text-align: center;
+  font-size: .875em;
+  padding: 1.714em 0;
+  border-top: thin solid #eeeeee;
+  margin-top: 1.714em;
 }
 
 /*** =MASTHEAD ***/
@@ -988,37 +1038,36 @@ a:hover, a:active, a:focus {
   margin: 0;
   float: left;
   padding: 0.5em 0;
-  font-family: Tahoma, sans-serif;
   font-size: 2em;
   line-height: 1;
 }
 
-/* line 16, ../sass/partials/_masthead.scss */
+/* line 17, ../sass/partials/_masthead.scss */
 .menu {
   float: right;
 }
 
-/* line 17, ../sass/partials/_masthead.scss */
+/* line 18, ../sass/partials/_masthead.scss */
 .menu ul {
   padding: 1.5em 0;
   margin: 0;
 }
 
-/* line 19, ../sass/partials/_masthead.scss */
+/* line 20, ../sass/partials/_masthead.scss */
 .menu li {
   list-style: none;
   display: inline-block;
   margin: 0 0 0.5em 0.5em;
 }
 
-/* line 25, ../sass/partials/_masthead.scss */
+/* line 26, ../sass/partials/_masthead.scss */
 .menu a {
   padding: .5em;
   border: 0.25em solid #73c2fb;
   display: block;
 }
 
-/* line 31, ../sass/partials/_masthead.scss */
+/* line 32, ../sass/partials/_masthead.scss */
 .menu a:hover {
   background: #73c2fb;
   color: whitesmoke;
@@ -1062,7 +1111,6 @@ input[type='button'], input[type='submit'], button, .button {
   background: transparent;
   line-height: 1;
   cursor: pointer;
-  background: #73c2fb;
   padding: 1em 1.5em;
   border: 0.25em solid rgba(0, 0, 0, 0.1);
   color: whitesmoke;
@@ -1075,32 +1123,33 @@ input[type='button'], input[type='submit'], button, .button {
   margin-bottom: .75rem;
 }
 
-/* line 55, ../sass/partials/_forms.scss */
+/* line 51, ../sass/partials/_forms.scss */
 input[type='button']:hover, input[type='submit']:hover, button:hover, .button:hover {
   box-shadow: inset 0 0 10em rgba(0, 0, 0, 0.1);
   border-color: rgba(255, 255, 255, 0.1);
 }
 
-/* line 61, ../sass/partials/_forms.scss */
+/* line 57, ../sass/partials/_forms.scss */
 input[type='button']:focus, input[type='submit']:focus, button:focus, .button:focus,
 input[type='button']:active, input[type='submit']:active, button:active, .button:active {
   box-shadow: inset 0 0 10em rgba(0, 0, 0, 0.2);
 }
 
-/* line 65, ../sass/partials/_forms.scss */
+/* line 61, ../sass/partials/_forms.scss */
 .btn-primary {
   font-size: 1.125em;
+  background: #73c2fb;
 }
 
-/* line 69, ../sass/partials/_forms.scss */
+/* line 66, ../sass/partials/_forms.scss */
 .btn-secondary {
   background: gold;
 }
 
-/* line 73, ../sass/partials/_forms.scss */
+/* line 70, ../sass/partials/_forms.scss */
 .btn-tertiary {
   font-size: .875em;
-  background: #999999;
+  background: #9f9f9f;
 }
 
 /*
@@ -1162,20 +1211,13 @@ h5, h6 {
   text-transform: uppercase;
 }
 
-/*** =ADJECTIVES ***/
-/* line 18, ../sass/partials/_base.scss */
-.ws-adjectives div {
-  font-size: 1.5em;
-  padding-bottom: .25em;
-}
-
-/*** =COLOPHON ***/
-/* line 24, ../sass/partials/_base.scss */
-.colophon {
-  clear: both;
-  text-align: center;
-  font-size: .875em;
-  padding: 1.714em 0;
-  border-top: thin solid #eeeeee;
-  margin-top: 1.714em;
+/* line 52, ../sass/partials/_typography.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+  _font-family: "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+  font-size: 1em;
+  line-height: 1.5em;
 }

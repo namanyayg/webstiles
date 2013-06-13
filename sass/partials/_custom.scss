@@ -11,10 +11,49 @@
 
 .ws-item {
   margin-bottom: 3em;
+  & > h1 {
+    font-size: .875em;
+    color: $gray-dark;
+    margin: 1em 0 1em 0;
+  }
+  & h1:first-of-type {
+    margin: 0em 0 1em 0;
+  }
 }
 
-.ws-item > h1 {
-  font-size: .875em;
-  color: $gray-dark;
-  margin: 0 0 1.714em 0;
+/*** =ADJECTIVES ***/
+.ws-adjectives div {
+  font-size: 1.5em;
+  padding-bottom: .25em;
 }
+
+// Override
+.ws-item.ws-adjectives {
+  margin-bottom: 1em;
+}
+.ws-settings {
+  border: .25em solid $soft-white;
+  padding: 10px;
+  .stack {
+    margin-bottom: .5em;
+  }
+}
+.ws-code {
+  //border: .25em solid $soft-white;
+  padding: 10px;
+  & > h1 {
+    font-size: .875em;
+    color: #9f9f9f;
+    margin: 1em 0 1em 0;
+  }
+}
+/*** =COLOPHON ***/
+.colophon {
+  clear: both;
+  text-align: center;
+  font-size: .875em;
+  padding: 1.714em 0;
+  border-top: thin solid $soft-white;
+  margin-top: 1.714em;
+}
+

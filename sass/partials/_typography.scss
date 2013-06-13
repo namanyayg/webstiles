@@ -45,3 +45,14 @@ h5, h6 {
     margin: .75em 0;
     text-transform: uppercase;
 }
+// Overrides normalize with mono from font-stack
+code,
+kbd,
+pre,
+samp {
+    font-family: $monospace-font-stack;
+    @if $legacy-support-for-ie6 {
+        _font-family: $monospace-font-stack;
+    }
+    @include adjust-font-size-to( 1 * $base-font-size );
+}

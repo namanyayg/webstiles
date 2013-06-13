@@ -8,7 +8,8 @@
   margin: 0;
   float: left;
   padding: .5em 0;
-  font-family: Tahoma, sans-serif;
+  //TODO: Remove redudant rule? Looks like we're already using Tahoma for whole page
+  //font-family: $tahoma-font-stack;
   font-size: 2em;
   line-height: 1;
 }
