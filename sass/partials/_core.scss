@@ -8,7 +8,7 @@ body {
 /* Remember to use normalize or a reset! */
 
 body, input, textarea, button, form, select {
-  font: 100%/1.5 'Tahoma', sans-serif;
+  font: 100%/1.5 $tahoma-font-stack;
   color: $medium-black;
   /* Inputs, forms, etc, can have weird font styles */
 }

@@ -1,0 +1,10 @@
+{
+    "name": "webstiles",
+    "version": "0.0.1",
+    "dependencies": {
+        "jquery": "latest",
+        "underscore": "latest",
+        "select2": "latest"
+    }
+}
+

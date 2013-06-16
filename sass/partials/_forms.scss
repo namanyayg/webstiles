@@ -35,13 +35,9 @@ input[type='button'], input[type='submit'], button, .button {
   background: transparent;
   line-height: 1;
   cursor: pointer;
-
-  background: $blueSky;
   padding: 1em 1.5em;
   border: .25em solid hsla(0,0%,0%,.1);
   color: $whiteSmoke;
-
-
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
@@ -64,6 +60,7 @@ input[type='button']:active, input[type='submit']:active, button:active, .button
 
 .btn-primary {
   font-size: 1.125em;
+  background: $blueSky;
 }
 
 .btn-secondary {

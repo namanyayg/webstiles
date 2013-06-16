@@ -10,8 +10,8 @@
 
 	<link rel="stylesheet" href="css/style.css" />
 	<link href="css/style.css" media="screen, projection" rel="stylesheet" type="text/css" />
-</head>
 
+    <link href="./components/select2/select2.css" rel="stylesheet"/>
 
 </head>
 <body>
@@ -71,6 +71,18 @@
 					<button class="button btn-secondary">Secondary Button</button>
 					<button class="button btn-tertiary">Tertiary Button</button>
 				</section><!-- /.ws-form -->
+<!-- Uncomment this section to see what pre/code will look like
+				<section class="ws-code">
+<h1>Preformatted Code</h1>
+<pre>
+function bar(arr) {
+  for (var i=0; i<10; i++) {
+    console.log(arr[i]);//Omg, it's a loop!
+  }
+}
+</pre>
+				</section>
+			-->
 			</div>
 
 
@@ -112,11 +124,92 @@
 					</div>
 				</section><!-- /.ws-adjectives -->
 
+				<section class="ws-item ws-settings">
+					<!-- ## Describe the project here -->
+					<h1>Color Settings - Select colors 1-6</h1>
+					<div class="stack">
+						<div class="sympl half s-half">
+							<input type="hidden full" id="color-picker-1" />
+						</div>
+						<div class="sympl half s-half">
+							Color 1
+						</div>
+					</div>
+					<div class="stack">
+						<div class="sympl half s-half">
+							<input type="hidden full" id="color-picker-2" />
+						</div>
+						<div class="sympl half s-half">
+							Color 2
+						</div>
+					</div>
+					<div class="stack">
+						<div class="sympl half s-half">
+							<input type="hidden full" id="color-picker-3" />
+						</div>
+						<div class="sympl half s-half">
+							Color 3
+						</div>
+					</div>
+					<div class="stack">
+						<div class="sympl half s-half">
+							<input type="hidden full" id="color-picker-4" />
+						</div>
+						<div class="sympl half s-half">
+							Color 4
+						</div>
+					</div>
+					<div class="stack">
+						<div class="sympl half s-half">
+							<input type="hidden full" id="color-picker-5" />
+						</div>
+						<div class="sympl half s-half">
+							Color 5
+						</div>
+					</div>
+					<div class="stack">
+						<div class="sympl half s-half">
+							<input multiple type="hidden full" id="color-picker-6" />
+						</div>
+						<div class="sympl half s-half">
+							Color 6
+						</div>
+					</div>
+					<h1>Background Color</h1>
+					<div class="stack">
+						<div class="sympl half s-half">
+							<input type="hidden full" id="color-picker-bg" />
+						</div>
+						<div class="sympl half s-half">
+							Background Color
+						</div>
+					</div>
+					<h1>Typography Settings - Select font-family</h1>
+					<div class="stack">
+						<div class="sympl half s-half">
+							<input type="hidden full" id="font-picker-titles" />
+						</div>
+						<div class="sympl half s-half">
+							Titles font stack
+						</div>
+					</div>
+					<div class="stack">
+						<div class="sympl half s-half">
+							<input type="hidden full" id="font-picker" />
+						</div>
+						<div class="sympl half s-half">
+							Font stack
+						</div>
+					</div>
+					<div class="stack">
+						<div class="sympl export full s-full">
+							<button class="full button btn-primary">Export</button>
+						</div>
+					</div>
+				</section><!-- /.ws-settings-->
 			</div>
 		</div>
 	</div>
-
-
 	<footer class="colophon" role="contentinfo">
 		<!-- ## REMEMBER TO CHANGE THIS! -->
 		<p>Project Name v0.8<br>
@@ -124,5 +217,13 @@
 		<a href="http://webstiles.namanyayg.com">Webstiles</a> concept by <a href="http://namanyayg.com/">Namanyay Goel</a></p>
 	</footer><!-- FOOTER -->
 </div>
+
+<!-- TODO: Should we opt for min.js files instead? -->
+<!-- Debuggability vs. Performance (does later mater for webstiles?) -->
+<script src="./components/jquery/jquery.js"></script>
+<script src="./components/underscore/underscore.js"></script>
+<script src="./components/select2/select2.js"></script>
+<script src="./scripts/js/colors.js"></script>
+<script src="./scripts/js/app.js"></script>
 </body>
 </html>
