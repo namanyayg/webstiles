@@ -68,3 +68,12 @@ I now use webstiles in pretty much every project of mine — and I believe y
 Once again, thanks to [Samantha for her amazing concept of Style Tiles](http://styletil.es/).
 
 Don't Panic!
+
+## Contributors
+
+Webstiles is the brain-child of [Namanyay Goel][namanyayg], the creator and maintainer of the Webstiles project.
+
+[namanyayg]: http://namanyayg.com/
+
+#### [Namanyay Goel](http://github.com/namanyayg) - Lead Developer/Maintainer
+#### [Rob Levin](https://github.com/roblevintennis) - Lead Developer
