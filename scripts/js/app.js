@@ -8,9 +8,7 @@ $(document).ready(function () {
             flattened[colorname] = value;
         });
     });
-
 // ============== COLORS ============= //
-
     // `key` is something like "_ambers" "_whites" etc. see sass/colors/colors directory
     function getColorsByGroup(key) {
         var arr = _.map(colors[key], function(v, k) {
@@ -18,7 +16,6 @@ $(document).ready(function () {
         });
         return arr;
     }
-
     /**
      * If `key` is a key to our flattened colors structure use, otherwise, assume a color value.
      */
@@ -116,44 +113,7 @@ $(document).ready(function () {
                 console.log("In default case");
                 break;
         }
-
-        /*
-// Custom colors
-$black: #222;
-$medium-black: lighten($black, 12%); #414141
-$hard-black: darken($black, 14%); // #000
-
-// Blacks
-h1, h2, h3, h4, h5, h6 { color: $black
-body, input, textarea, button, form, select {color: $medium-black;
-mark {background: lighten($yellowGold, 5%) ; color: $hard-black;}
-
-// Grays
-.btn-tertiary {background: $gray-dark;
-a:hover, a:active, a:focus {border-bottom-color: $gray-light;
-fieldset {border-color: $graySilver;}
-.ws-item {
-    & > h1 {color: $gray-dark;
-
-// Blues and Whites
-a, a:link, a:visited {color: $blueSky;
-.menu a {border: .25em solid $blueSky;
-.menu a:hover {
-  background: $blueSky;
-  color: $whiteSmoke;
-}
-input:focus, textarea:focus {border-color: $blueSky;
-input[type='button'], input[type='submit'], button, .button {
-  background: $blueSky;
-  color: $whiteSmoke;
-
-.ws-settings {
-  border: .25em solid $soft-white;
-.colophon {
-  border-top: thin solid $soft-white;
-*/
     }
-
     // Default colors start as defined here
     var colorsInUse = {
         color1: '$redCrimson',
@@ -195,7 +155,6 @@ input[type='button'], input[type='submit'], button, .button {
         { text: 'Whites', children: getColorsByGroup('_whites') },
         { text: 'Yellows', children: getColorsByGroup('_yellows') }
     ];
-
     /**
      * These are boiler-plate select2 constructor options to remove some duplication
      * between the various color-pickers using select2
@@ -252,7 +211,6 @@ input[type='button'], input[type='submit'], button, .button {
         setCSSColor('color-3', e.val);
         setColorHint(e.val, this);
     });
-
     // ============== Color-4 ============= //
     $("#color-picker-4").val(colorsInUse.color4);
     $("#color-picker-4").select2(select2Options);
@@ -283,7 +241,6 @@ input[type='button'], input[type='submit'], button, .button {
         setCSSColor('color-6', e.val);
         setColorHint(e.val, this);
     });
-
     // ============== Background Color ============= //
     $("#color-picker-bg").val(colorsInUse.bg);
     $("#color-picker-bg").select2(select2Options);
@@ -295,7 +252,6 @@ input[type='button'], input[type='submit'], button, .button {
         setColorHint(e.val, this);
     });
 // ============== TYPOGRAPHY ============= //
-
     // Serif font-stacks
     // TODO: These are pulled out from _font-stack.scss. Probably should eventually have a node.js to pick up (although the font-stack lib doesn't seem to get updated anymore so might not be worthwhile ROI)
     var fonts = {
@@ -340,7 +296,6 @@ input[type='button'], input[type='submit'], button, .button {
             flattenedFonts[fontname] = value;
         });
     });
-
     function getFontByGroup(key) {
         var arr,
             grp = fonts[key];
@@ -379,7 +334,6 @@ input[type='button'], input[type='submit'], button, .button {
                 break;
         }
     }
-    // TODO: Maybe add secondary and tertiary fonts?
     var fontsInUse = {
         'main': '$tahoma-font-stack',
         'titles': '$palatino-font-stack'
@@ -413,5 +367,64 @@ input[type='button'], input[type='submit'], button, .button {
         setCSSFont('titles', e.val);
         setFontHint(e.val, this);
     });
+// ============== WEBSTILES EXPORT ============= //
+    $(".export > .button").on("click", function(evt) {
+        exportSettings(
+            '<h3>CSS</h3>'+
+            '<pre>'+
+                '.color-1 { background: '+flattened[colorsInUse.color1]+'; }\n'+
+                '.color-2 { background: '+flattened[colorsInUse.color2]+'; }\n'+
+                '.color-3 { background: '+flattened[colorsInUse.color3]+'; }\n'+
+                '.color-4 { background: '+flattened[colorsInUse.color4]+'; }\n'+
+                '.color-5 { background: '+flattened[colorsInUse.color5]+'; }\n'+
+                '.color-6 { background: '+flattened[colorsInUse.color6]+'; }\n'+
+                '.bg { background: '+flattened[colorsInUse.bg]+'; }\n'+
+                '.font-main { font-family: '+flattenedFonts[fontsInUse.main]+'; }\n'+
+                '.font-title { font-family: '+flattenedFonts[fontsInUse.titles]+'; }\n'+
+            '</pre>'+
+            '<h3>Sass</h3>'+
+            '<pre>See: sass/colors/colors/_color-me-sass.scss</pre>'+
+            '<p>These are from the excellent <a href="http://www.richbray.me/cms/" target="_new">color-me-sass</a> library</p>'+
+            '<pre>'+
+                '.color-1 { background: '+colorsInUse.color1+'; }\n'+
+                '.color-2 { background: '+colorsInUse.color2+'; }\n'+
+                '.color-3 { background: '+colorsInUse.color3+'; }\n'+
+                '.color-4 { background: '+colorsInUse.color4+'; }\n'+
+                '.color-5 { background: '+colorsInUse.color5+'; }\n'+
+                '.color-6 { background: '+colorsInUse.color6+'; }\n'+
+                '.bg { background: '+colorsInUse.bg+'; }\n'+
+                '.font-main { font-family: '+fontsInUse.main+'; }\n'+
+                '.font-title { font-family: '+fontsInUse.titles+'; }\n'+
+            '</pre>'+
+            '<h3>Less</h3>'+
+            '<p>For these you will need to use the Less version of <a href="http://www.richbray.me/cms/" target="_new">color-me-sass</a></p>'+
+            '<pre>'+
+                '.color-1 { background: '+colorsInUse.color1.replace('$','@')+'; }\n'+
+                '.color-2 { background: '+colorsInUse.color2.replace('$','@')+'; }\n'+
+                '.color-3 { background: '+colorsInUse.color3.replace('$','@')+'; }\n'+
+                '.color-4 { background: '+colorsInUse.color4.replace('$','@')+'; }\n'+
+                '.color-5 { background: '+colorsInUse.color5.replace('$','@')+'; }\n'+
+                '.color-6 { background: '+colorsInUse.color6.replace('$','@')+'; }\n'+
+                '.bg { background: '+colorsInUse.bg.replace('$','@')+'; }\n'+
+                '.font-main { font-family: '+fontsInUse.main.replace('$','@')+'; }\n'+
+                '.font-title { font-family: '+fontsInUse.titles.replace('$','@')+'; }\n'+
+            '</pre>'
+        );
+    });
+    // Pops up a new window where user can copy webstiles CSS/Sass/Less settings
+    function exportSettings(content) {
+        top.consoleRef=window.open('','settings-export',
+            'width=500,height=750'
+            +',menubar=0'
+            +',toolbar=0'
+            +',status=0'
+            +',scrollbars=1'
+            +',resizable=1', true);
+        top.consoleRef.document.writeln(
+            '<html><head><title>Webstiles Settings Export</title></head>'
+            +'<body bgcolor=white onLoad="self.focus()">'
+            +content
+            +'</body></html>');
+        top.consoleRef.document.close();
+    }
 });
-

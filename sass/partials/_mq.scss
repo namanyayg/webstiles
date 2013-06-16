@@ -5,6 +5,8 @@
 /* L stands for large. L styles get triggered at 60em, that is, 960px */
 
 @media (max-width: 60em) {
+    .l-full { width: 100%; }
+
     .l-half, .l-twoquarters, .l-threesixths { width: 50%; }
 
     .l-onethird, .l-twosixths { width: 33.333333%; }
