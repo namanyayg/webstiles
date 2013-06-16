@@ -16,6 +16,8 @@ _These direction are for editing the CSS directly (which is certainly a fine way
 4. You’re almost done. In the HTML, change the adjectives, and the headings/slogans. Remove any elements you don’t want.
 5. You’re done! Upload it for client feedback, or send to your team!
 
+_In addition to above, you can also just use the dynamic color and font picker dropdowns on the pages lower right, and then click the big Export button once you've got things the way you want it. This will export CSS, Sass, and Less values. Please note that custom CSS values can be typed in to the color and font picker textfields (as opposed to selecting from the predefined dropdowns) and those values will be used instead._
+
 # Sass How To
 
 The directions are essentially the same as the main How To, but instead, you'll be editing the files in the `./sass/*` directory. Please see the following resources for more information if you're new to Sass (or just go ahead and edit the CSS directly if you're looking for a quick one-off solution and don't have time for all this Sass stuff!):
@@ -31,6 +33,17 @@ If you just want to edit and go and you've obtained this via `git clone`, you'll
 ```bash
 git submodule init && git submodule update
 ```
+
+_To optionally sync Webstiles with the latest color-me-sass submodule update, we have a Node.js script: `./scripts/create-colors-config.js` that will ensure that the very latest color-me-sass variables are being used from within Webstiles (of course this requires Node.js!)_
+
+```bash
+./scripts/create-colors-config.js
+# ... output omitted for brevity
+--- Writing out Colors JavaScript ---
+Colors JavaScript written to:  /Users/rlevin/programming/labs/webstiles/scripts/js/colors.js
+```
+
+The above `colors.js` defines the variables that are used in the dynamic color-pickers.
 
 Then simply do the following to set up Compass / Sass:
 
