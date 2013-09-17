@@ -1,0 +1,502 @@
+/*!
+
+Webstiles - A simple template for web design prototyping.
+
+By Namanyay Goel | http://namanyayg.com/ | @namanyayg
+ 
+Under MIT License.
+https://github.com/namanyayg/webstiles.
+
+*/
+
+/*! Sympl http://github.com/namanyayg/sympl | MIT License | Namanyay Goel http://namanyayg.com/ */
+
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}ul{padding:0;}
+
+
+
+
+
+
+
+/* ==========================================================================
+   =SASS
+   ========================================================================== */
+
+
+/* Colors - Not semantic */
+$grey: #444;
+$dark-grey: #222;
+$light-grey: #999;
+
+
+/* Colors */
+$prim-color: deepskyblue;
+$sec-color: gold;
+
+$body-background-color: #fff;
+
+$color-1-color: tomato;
+$color-2-color: gold;
+$color-3-color: $prim-color;
+$color-4-color: $grey;
+$color-5-color: gainsboro;
+$color-6-color: saddlebrown;
+
+
+/* Global */
+$main-font-family: Tahoma, sans-serif;
+$sec-font-family: Georgia, serif;
+
+$main-anchor-color: $prim-color;
+$main-anchor-color--hover: $sec-color;
+
+
+/* Root */
+$root-font-size: 100%;
+$root-line-height: 1.5;
+$root-text-color: $grey;
+$sec-text-color: $dark-grey;
+
+
+
+
+/*! Sympl.css v3.0.0 sympl.namanyayg.com | 
+Namanyay Goel | www.namanyayg.com | @namanyayg */
+
+/* ==========================================================================
+   =CORE
+   ========================================================================== */
+
+body {
+  background: $body-background-color;
+}
+
+/* Remember to use normalize or a reset! */
+
+body, input, textarea, button, form, select {
+  font-size: $root-font-size;
+  line-height: $root-line-height;
+  font-family: $main-font-family;
+  color: $root-text-color;
+  /* Inputs, forms, etc, can have weird font styles */
+}
+
+a, a:link, a:visited { 
+  text-decoration: none;
+  color: $prim-color;
+  border-bottom: thin solid transparent;
+
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+a:hover, a:active, a:focus {
+  border-bottom-color: #ddd;
+}
+
+
+
+
+
+/* ==========================================================================
+   =TYPOGRAPHY
+   ========================================================================== */
+
+p { margin: 0; }
+p + p { margin-top: 1.5em; }
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    /* Set defaults for all headings here, 
+    you might want to change fonts or sizes */
+    color: $sec-text-color;
+    font-weight: 400;
+    font-family: $sec-font-family;
+}
+
+h1 {
+    font-size: 2em;
+    line-height: 1.5;
+    margin: .375em 0;
+}
+
+h2 {
+    font-size: 1.5em;
+    line-height: 1;
+    margin: .5em 0;
+}
+
+h3 {
+    font-size: 1.25em;
+    line-height: 1.2;
+    margin: .6em 0;
+}
+
+h4 {
+    font-size: 1.125em;
+    line-height: 1.333333;
+    margin: .666666em 0;
+}
+
+h5, h6 { 
+    font-size: 1em;
+    line-height: 1.5;
+    margin: .75em 0;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+/* ==========================================================================
+   =GRID
+   ========================================================================== */
+
+.stack {
+  /* A set of grid items must be in a stack.
+  Use sympl-stack when you want a margin at the bottom */
+  clear: both;
+  margin: 0 0 0 -1.5em;
+}
+
+.stack-sympl {
+  padding-bottom: 1.5em;
+}
+
+.stack-clean { padding-bottom: 0; padding-top: 1.5em; }
+.stack-clean .sympl { padding-bottom: 1.5em; }
+
+.sympl {
+  /* Each grid item should have the sympl class, along with at least one class for size */
+  float: left;
+  padding: 0 0 0 1.5em;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.stack:before,
+.stack:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.stack:after {
+    clear: both;
+}
+
+.half, .twoquarters, .threesixths { width: 50%; }
+
+.onethird, .twosixths { width: 33.333333%; }
+.twothirds, .foursixths { width: 66.666666%; }
+
+.quarter { width: 25%; }
+.three-quarters { width: 75%; }
+
+.onefifth { width: 20%; }
+.twofifths { width: 40%; }
+.threefifths { width: 60%; }
+.fourfifths { width: 80%; }
+
+.onesixth { width: 16.666666%; }
+.fivesixths { width: 83.333333%; }
+
+/* L stands for large. L styles get triggered at 60em, that is, 960px */
+
+@media (max-width: 60em) {
+    .l-half, .l-twoquarters, .l-threesixths { width: 50%; }
+
+    .l-onethird, .l-twosixths { width: 33.333333%; }
+    .l-twothirds, .l-foursixths { width: 66.666666%; }
+
+    .l-quarter { width: 25%; }
+    .l-three-quarters { width: 75%; }
+
+    .l-onefifth { width: 20%; }
+    .l-twofifths { width: 40%; }
+    .l-threefifths { width: 60%; }
+    .l-fourfifths { width: 80%; }
+
+    .l-onesixth { width: 16.666666%; }
+    .l-fivesixths { width: 83.333333%; }
+
+    .hide-l-and-below { display: none; visibility: hidden; }
+    .show-l-and-below { display: block; visibility: visible; }
+}
+
+@media (max-width: 60em) and (min-width: 45em) {
+    .hide-on-l { display: none; visibility: hidden; }
+    .show-on-l { display: block; visibility: visible; }
+}
+
+/* M stands for medium. M styles get triggered at 45em, that is, 720px */
+
+@media (max-width: 45em) {
+    .m-full { width: 100%; }
+
+    .m-half, .m-twoquarters { width: 50%; }
+
+    .m-onethird { width: 33.333333%; }
+    .m-twothirds { width: 66.666666%; }
+
+    .m-quarter { width: 25%; }
+    .m-three-quarters { width: 75%; }
+
+    .hide-m-and-below { display: none; visibility: hidden; }
+    .show-m-and-below { display: block; visibility: visible; }   
+}
+
+@media (max-width: 45em) and (min-width: 30em) {
+    .hide-on-m { display: none; visibility: hidden; }
+    .show-on-m { display: block; visibility: visible; }
+}
+
+/* S stands for small. S styles get triggered at 30em, ie, 480px */
+
+@media (max-width: 30em) {
+    .sympl { width: 100%; }
+    
+    .s-full { width: 100%; }
+
+    .s-half, .s-twoquarters { width: 50%; }
+
+    .s-onethird { width: 33.333333%; }
+    .s-twothirds { width: 66.666666%; }
+
+    .hide-on-s { display: none; visibility: hidden; }
+    .show-on-s { display: block; visibility: visible; }
+}
+
+
+
+
+
+
+
+/* ==========================================================================
+   
+    LET'S GET STARTED!
+
+   ========================================================================== */
+
+.wrap {
+  width: 80em;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.ws-item {
+  margin-bottom: 3em;
+}
+
+.ws-item > h1 {
+  font-size: .875em;
+  color: #999;
+  margin: 0 0 1.714em 0;
+}
+
+
+
+
+
+/* ==========================================================================
+   =MASTHEAD
+   ========================================================================== */
+
+.masthead { 
+  background: #f6f6f6; 
+  overflow: hidden; 
+  margin-bottom: 1.5em; 
+}
+
+.logo h1 { 
+  margin: 0; 
+  float: left; 
+  padding: .5em 0;
+  font-family: $main-font-family;
+  font-size: 2em;
+  line-height: 1;
+}
+
+.menu { float: right; }
+.menu ul { padding: 1.5em 0; margin: 0; }
+
+.menu li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 0 .5em .5em;
+}
+
+.menu a {
+  padding: .5em;
+  border: .25em solid $prim-color;
+  display: block;
+}
+
+.menu a:hover {
+  background: $prim-color;
+  color: white;
+}
+
+
+
+
+
+/* ==========================================================================
+   =COLOR
+   ========================================================================== */
+
+[class^="color"] {
+  height: 5em;
+}
+
+.color-1 { background: $color-1-color; }
+.color-2 { background: $color-2-color; }
+.color-3 { background: $color-3-color; }
+.color-4 { background: $color-4-color; }
+.color-5 { background: $color-5-color; }
+.color-6 { background: $color-6-color; }
+
+
+
+
+
+/* ==========================================================================
+   =FORM
+   ========================================================================== */
+
+.ws-form { margin-top: -1.5em; }
+
+input, textarea {
+  /* Use for styling text based form elements, like name, email, password. 
+  Button/submit specific styles below, those will override */
+  display: block;
+  padding: .5em;
+  margin-bottom: .75em;
+  border: .25em solid #eee;
+  width: 100%;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+
+  resize: none;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: $prim-color;
+}
+
+input[type='button'], input[type='submit'], button, .button {
+  border: none;
+  background: transparent; 
+  line-height: 1;
+  cursor: pointer;
+  padding: 1em 1.5em;
+  color: white;
+  border: .25em solid;
+
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+
+  display: block;
+  margin-bottom: .75em;
+  margin-bottom: .75rem;  
+}
+
+
+.btn-primary {
+  background: $prim-color;
+  border-color: darken($prim-color, 10%);
+
+  &:hover {
+    background: darken($prim-color, 10%);
+    border-color: $prim-color;
+  }
+  
+  &:focus, &:active {
+    background: darken($prim-color, 10%);
+  }
+}
+
+.btn-secondary { 
+  background: $sec-color;
+  border-color: darken($sec-color, 10%);
+  
+  &:hover {
+    background: darken($sec-color, 10%);
+    border-color: $sec-color;
+  }
+
+  &:focus, &:active {
+    background: darken($sec-color, 10%);
+  }
+}
+
+
+.btn-tertiary {
+  font-size: .875em;
+  background: $light-grey;
+  border-color: darken($light-grey, 10%);
+
+  &:hover {
+    background: darken($light-grey, 10%);
+    border-color: $light-grey;
+  }
+
+  &:focus, &:active {
+    background: darken($light-grey, 10%);
+  }
+}
+
+
+
+
+
+
+/* ==========================================================================
+   =ADJECTIVES
+   ========================================================================== */
+
+.ws-adjectives div {
+  font-size: 1.5em;
+  padding-bottom: .25em;
+}
+
+
+
+
+
+
+/* ==========================================================================
+   =COLOPHON
+   ========================================================================== */
+
+.colophon { 
+  clear: both; 
+  text-align: center; 
+  font-size: .875em; 
+  padding: 1.714em 0;
+  border-top: thin solid #eee;
+  margin-top: 1.714em;
+}

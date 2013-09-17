@@ -9,8 +9,8 @@ Webstiles tell the mood of the website, by defining typography, colors, layout a
 # How To
 
 1. Download the template
-2. Open up its CSS and HTML files.
-3. In the CSS, change the colors and typefaces. The primary sans typeface used is Tahoma, while the primary serif typeface is Georgia. The primary color is deepskyblue, the secondary color is gold, and tertiary colors are #eee, darkslategray, gainsboro, and saddlebrown. Search and replace!
+2. Open up its CSS and HTML files. (`style.css` and `index.htm` respectively)
+3. In the CSS, change the colors and typefaces. There are variables on the top which you can use to easily switch colors.
 4. You’re almost done. In the HTML, change the adjectives, and the headings/slogans. Remove any elements you don’t want.
 5. You’re done! Upload it for client feedback, or send to your team!
 

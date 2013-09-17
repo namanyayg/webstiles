@@ -1,4 +1,4 @@
-/*!
+/*
 
 Webstiles - A simple template for web design prototyping.
 
@@ -8,40 +8,195 @@ Under MIT License.
 https://github.com/namanyayg/webstiles.
 
 */
+/* Sympl http://github.com/namanyayg/sympl | MIT License | Namanyay Goel http://namanyayg.com/ */
+/* normalize.css v2.0.1 | MIT License | git.io/normalize */
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+  display: block;
+}
 
-/*! Sympl http://github.com/namanyayg/sympl | MIT License | Namanyay Goel http://namanyayg.com/ */
+audio, canvas, video {
+  display: inline-block;
+}
 
-/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
 
-article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
-input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}ul{padding:0;}
+[hidden] {
+  display: none;
+}
 
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
 
+a:focus {
+  outline: thin dotted;
+}
 
-/*! Sympl.css v3.0.0 sympl.namanyayg.com | 
+a:active, a:hover {
+  outline: 0;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+dfn {
+  font-style: italic;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+code, kbd, pre, samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: \201C \201D \2018 \2019;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -.5em;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+img {
+  border: 0;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+fieldset {
+  border: 1px solid silver;
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+}
+
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+}
+
+button, input {
+  line-height: normal;
+}
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+input[type=checkbox], input[type=radio] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+input[type=search] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+input[type=search]::-webkit-search-cancel-button, input[type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body, figure {
+  margin: 0;
+}
+
+legend, button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+}
+
+/* ==========================================================================
+   =SASS
+   ========================================================================== */
+/* Colors - Not semantic */
+/* Colors */
+/* Global */
+/* Root */
+/* Sympl.css v3.0.0 sympl.namanyayg.com | 
 Namanyay Goel | www.namanyayg.com | @namanyayg */
-
-/* 
-=Core 
-*/
-
+/* ==========================================================================
+   =CORE
+   ========================================================================== */
 body {
-  margin: 0; padding: 0;
+  background: white;
 }
 
 /* Remember to use normalize or a reset! */
-
 body, input, textarea, button, form, select {
-  font: 100%/1.5 'Tahoma', sans-serif;
-  color: #444;
+  font-size: 100%;
+  line-height: 1.5;
+  font-family: Tahoma, sans-serif;
+  color: #444444;
   /* Inputs, forms, etc, can have weird font styles */
 }
 
-a, a:link, a:visited { 
+a, a:link, a:visited {
   text-decoration: none;
   color: deepskyblue;
   border-bottom: thin solid transparent;
-
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
@@ -53,60 +208,60 @@ a:hover, a:active, a:focus {
   border-bottom-color: #ddd;
 }
 
+/* ==========================================================================
+   =TYPOGRAPHY
+   ========================================================================== */
+p {
+  margin: 0;
+}
 
-
-/* 
-=Typography 
-*/
-
-p { margin: 0; }
-p + p { margin-top: 1.5em; }
+p + p {
+  margin-top: 1.5em;
+}
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
-    /* Set defaults for all headings here, 
-    you might want to change fonts or sizes */
-    color: #222;
-    font-weight: 400;
-    font-family: Georgia;
+  /* Set defaults for all headings here, 
+  you might want to change fonts or sizes */
+  color: #222222;
+  font-weight: 400;
+  font-family: Georgia, serif;
 }
 
 h1 {
-    font-size: 2em;
-    line-height: 1.5;
-    margin: .375em 0;
+  font-size: 2em;
+  line-height: 1.5;
+  margin: .375em 0;
 }
 
 h2 {
-    font-size: 1.5em;
-    line-height: 1;
-    margin: .5em 0;
+  font-size: 1.5em;
+  line-height: 1;
+  margin: .5em 0;
 }
 
 h3 {
-    font-size: 1.25em;
-    line-height: 1.2;
-    margin: .6em 0;
+  font-size: 1.25em;
+  line-height: 1.2;
+  margin: .6em 0;
 }
 
 h4 {
-    font-size: 1.125em;
-    line-height: 1.333333;
-    margin: .666666em 0;
+  font-size: 1.125em;
+  line-height: 1.333333;
+  margin: .666666em 0;
 }
 
-h5, h6 { 
-    font-size: 1em;
-    line-height: 1.5;
-    margin: .75em 0;
-    text-transform: uppercase;
+h5, h6 {
+  font-size: 1em;
+  line-height: 1.5;
+  margin: .75em 0;
+  text-transform: uppercase;
 }
 
-
-/*
-=Grid
-*/
-
+/* ==========================================================================
+   =GRID
+   ========================================================================== */
 .stack {
   /* A set of grid items must be in a stack.
   Use sympl-stack when you want a margin at the bottom */
@@ -118,14 +273,19 @@ h5, h6 {
   padding-bottom: 1.5em;
 }
 
-.stack-clean { padding-bottom: 0; padding-top: 1.5em; }
-.stack-clean .sympl { padding-bottom: 1.5em; }
+.stack-clean {
+  padding-bottom: 0;
+  padding-top: 1.5em;
+}
+
+.stack-clean .sympl {
+  padding-bottom: 1.5em;
+}
 
 .sympl {
   /* Each grid item should have the sympl class, along with at least one class for size */
   float: left;
   padding: 0 0 0 1.5em;
-
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -133,101 +293,211 @@ h5, h6 {
 
 .stack:before,
 .stack:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
 }
 
 .stack:after {
-    clear: both;
+  clear: both;
 }
 
-.half, .twoquarters, .threesixths { width: 50%; }
+.half, .twoquarters, .threesixths {
+  width: 50%;
+}
 
-.onethird, .twosixths { width: 33.333333%; }
-.twothirds, .foursixths { width: 66.666666%; }
+.onethird, .twosixths {
+  width: 33.333333%;
+}
 
-.quarter { width: 25%; }
-.three-quarters { width: 75%; }
+.twothirds, .foursixths {
+  width: 66.666666%;
+}
 
-.onefifth { width: 20%; }
-.twofifths { width: 40%; }
-.threefifths { width: 60%; }
-.fourfifths { width: 80%; }
+.quarter {
+  width: 25%;
+}
 
-.onesixth { width: 16.666666%; }
-.fivesixths { width: 83.333333%; }
+.three-quarters {
+  width: 75%;
+}
+
+.onefifth {
+  width: 20%;
+}
+
+.twofifths {
+  width: 40%;
+}
+
+.threefifths {
+  width: 60%;
+}
+
+.fourfifths {
+  width: 80%;
+}
+
+.onesixth {
+  width: 16.666666%;
+}
+
+.fivesixths {
+  width: 83.333333%;
+}
 
 /* L stands for large. L styles get triggered at 60em, that is, 960px */
-
 @media (max-width: 60em) {
-    .l-half, .l-twoquarters, .l-threesixths { width: 50%; }
+  .l-half, .l-twoquarters, .l-threesixths {
+    width: 50%;
+  }
 
-    .l-onethird, .l-twosixths { width: 33.333333%; }
-    .l-twothirds, .l-foursixths { width: 66.666666%; }
+  .l-onethird, .l-twosixths {
+    width: 33.333333%;
+  }
 
-    .l-quarter { width: 25%; }
-    .l-three-quarters { width: 75%; }
+  .l-twothirds, .l-foursixths {
+    width: 66.666666%;
+  }
 
-    .l-onefifth { width: 20%; }
-    .l-twofifths { width: 40%; }
-    .l-threefifths { width: 60%; }
-    .l-fourfifths { width: 80%; }
+  .l-quarter {
+    width: 25%;
+  }
 
-    .l-onesixth { width: 16.666666%; }
-    .l-fivesixths { width: 83.333333%; }
+  .l-three-quarters {
+    width: 75%;
+  }
 
-    .hide-l-and-below { display: none; visibility: hidden; }
-    .show-l-and-below { display: block; visibility: visible; }
+  .l-onefifth {
+    width: 20%;
+  }
+
+  .l-twofifths {
+    width: 40%;
+  }
+
+  .l-threefifths {
+    width: 60%;
+  }
+
+  .l-fourfifths {
+    width: 80%;
+  }
+
+  .l-onesixth {
+    width: 16.666666%;
+  }
+
+  .l-fivesixths {
+    width: 83.333333%;
+  }
+
+  .hide-l-and-below {
+    display: none;
+    visibility: hidden;
+  }
+
+  .show-l-and-below {
+    display: block;
+    visibility: visible;
+  }
 }
-
 @media (max-width: 60em) and (min-width: 45em) {
-    .hide-on-l { display: none; visibility: hidden; }
-    .show-on-l { display: block; visibility: visible; }
-}
+  .hide-on-l {
+    display: none;
+    visibility: hidden;
+  }
 
+  .show-on-l {
+    display: block;
+    visibility: visible;
+  }
+}
 /* M stands for medium. M styles get triggered at 45em, that is, 720px */
-
 @media (max-width: 45em) {
-    .m-full { width: 100%; }
+  .m-full {
+    width: 100%;
+  }
 
-    .m-half, .m-twoquarters { width: 50%; }
+  .m-half, .m-twoquarters {
+    width: 50%;
+  }
 
-    .m-onethird { width: 33.333333%; }
-    .m-twothirds { width: 66.666666%; }
+  .m-onethird {
+    width: 33.333333%;
+  }
 
-    .m-quarter { width: 25%; }
-    .m-three-quarters { width: 75%; }
+  .m-twothirds {
+    width: 66.666666%;
+  }
 
-    .hide-m-and-below { display: none; visibility: hidden; }
-    .show-m-and-below { display: block; visibility: visible; }   
+  .m-quarter {
+    width: 25%;
+  }
+
+  .m-three-quarters {
+    width: 75%;
+  }
+
+  .hide-m-and-below {
+    display: none;
+    visibility: hidden;
+  }
+
+  .show-m-and-below {
+    display: block;
+    visibility: visible;
+  }
 }
-
 @media (max-width: 45em) and (min-width: 30em) {
-    .hide-on-m { display: none; visibility: hidden; }
-    .show-on-m { display: block; visibility: visible; }
-}
+  .hide-on-m {
+    display: none;
+    visibility: hidden;
+  }
 
+  .show-on-m {
+    display: block;
+    visibility: visible;
+  }
+}
 /* S stands for small. S styles get triggered at 30em, ie, 480px */
-
 @media (max-width: 30em) {
-    .sympl { width: 100%; }
-    
-    .s-full { width: 100%; }
+  .sympl {
+    width: 100%;
+  }
 
-    .s-half, .s-twoquarters { width: 50%; }
+  .s-full {
+    width: 100%;
+  }
 
-    .s-onethird { width: 33.333333%; }
-    .s-twothirds { width: 66.666666%; }
+  .s-half, .s-twoquarters {
+    width: 50%;
+  }
 
-    .hide-on-s { display: none; visibility: hidden; }
-    .show-on-s { display: block; visibility: visible; }
+  .s-onethird {
+    width: 33.333333%;
+  }
+
+  .s-twothirds {
+    width: 66.666666%;
+  }
+
+  .hide-on-s {
+    display: none;
+    visibility: hidden;
+  }
+
+  .show-on-s {
+    display: block;
+    visibility: visible;
+  }
 }
+/* ==========================================================================
+   
+    LET'S GET STARTED!
 
-
-/*====================
-=CUSTOM
-====================*/
-
+   ========================================================================== */
 .wrap {
   width: 80em;
   max-width: 95%;
@@ -244,21 +514,32 @@ h5, h6 {
   margin: 0 0 1.714em 0;
 }
 
-/*** =MASTHEAD ***/
+/* ==========================================================================
+   =MASTHEAD
+   ========================================================================== */
+.masthead {
+  background: #f6f6f6;
+  overflow: hidden;
+  margin-bottom: 1.5em;
+}
 
-.masthead { background: #f6f6f6; overflow: hidden; margin-bottom: 1.5em; }
-
-.logo h1 { 
-  margin: 0; 
-  float: left; 
+.logo h1 {
+  margin: 0;
+  float: left;
   padding: .5em 0;
   font-family: Tahoma, sans-serif;
   font-size: 2em;
   line-height: 1;
 }
 
-.menu { float: right; }
-.menu ul { padding: 1.5em 0; margin: 0; }
+.menu {
+  float: right;
+}
+
+.menu ul {
+  padding: 1.5em 0;
+  margin: 0;
+}
 
 .menu li {
   list-style: none;
@@ -268,7 +549,7 @@ h5, h6 {
 
 .menu a {
   padding: .5em;
-  border: .25em solid deepskyblue;
+  border: 0.25em solid deepskyblue;
   display: block;
 }
 
@@ -277,24 +558,43 @@ h5, h6 {
   color: white;
 }
 
-/*** =COLOR ***/
-
+/* ==========================================================================
+   =COLOR
+   ========================================================================== */
 [class^="color"] {
   height: 5em;
 }
 
-.color-1 { background: tomato; }
-.color-2 { background: gold; }
-.color-3 { background: deepskyblue; }
-.color-4 { background: darkslategray; }
-.color-5 { background: gainsboro; }
-.color-6 { background: saddlebrown; }
+.color-1 {
+  background: tomato;
+}
 
+.color-2 {
+  background: gold;
+}
 
+.color-3 {
+  background: deepskyblue;
+}
 
-/*** =FORM ***/
+.color-4 {
+  background: #444444;
+}
 
-.ws-form { margin-top: -1.5em; }
+.color-5 {
+  background: gainsboro;
+}
+
+.color-6 {
+  background: saddlebrown;
+}
+
+/* ==========================================================================
+   =FORM
+   ========================================================================== */
+.ws-form {
+  margin-top: -1.5em;
+}
 
 input, textarea {
   /* Use for styling text based form elements, like name, email, password. 
@@ -304,17 +604,14 @@ input, textarea {
   margin-bottom: .75em;
   border: .25em solid #eee;
   width: 100%;
-
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
-
   resize: none;
 }
 
@@ -325,64 +622,74 @@ input:focus, textarea:focus {
 
 input[type='button'], input[type='submit'], button, .button {
   border: none;
-  background: transparent; 
+  background: transparent;
   line-height: 1;
   cursor: pointer;
-
-  background: deepskyblue;
   padding: 1em 1.5em;
-  border: .25em solid hsla(0,0%,0%,.1);
   color: white;
-
-
+  border: .25em solid;
   -webkit-transition: all .3s ease;
   -moz-transition: all .3s ease;
   -ms-transition: all .3s ease;
   -o-transition: all .3s ease;
   transition: all .3s ease;
-
   display: block;
+  margin-bottom: .75em;
   margin-bottom: .75rem;
 }
 
-input[type='button']:hover, input[type='submit']:hover, button:hover, .button:hover {
-  box-shadow: inset 0 0 10em hsla(0, 0%, 0%, .1);
-  border-color: hsla(0,0%,100%,.1);
-}
-
-input[type='button']:focus, input[type='submit']:focus, button:focus, .button:focus, 
-input[type='button']:active, input[type='submit']:active, button:active, .button:active {
-  box-shadow: inset 0 0 10em hsla(0, 0%, 0%, .2);
-}
-
 .btn-primary {
-  font-size: 1.125em;
+  background: deepskyblue;
+  border-color: #0099cc;
+}
+.btn-primary:hover {
+  background: #0099cc;
+  border-color: deepskyblue;
+}
+.btn-primary:focus, .btn-primary:active {
+  background: #0099cc;
 }
 
-.btn-secondary { 
+.btn-secondary {
   background: gold;
+  border-color: #ccac00;
+}
+.btn-secondary:hover {
+  background: #ccac00;
+  border-color: gold;
+}
+.btn-secondary:focus, .btn-secondary:active {
+  background: #ccac00;
 }
 
 .btn-tertiary {
   font-size: .875em;
-  background: #999;
+  background: #999999;
+  border-color: gray;
+}
+.btn-tertiary:hover {
+  background: gray;
+  border-color: #999999;
+}
+.btn-tertiary:focus, .btn-tertiary:active {
+  background: gray;
 }
 
-
-
-/*** =ADJECTIVES ***/
-
+/* ==========================================================================
+   =ADJECTIVES
+   ========================================================================== */
 .ws-adjectives div {
   font-size: 1.5em;
   padding-bottom: .25em;
 }
 
-
-/*** =COLOPHON ***/
-.colophon { 
-  clear: both; 
-  text-align: center; 
-  font-size: .875em; 
+/* ==========================================================================
+   =COLOPHON
+   ========================================================================== */
+.colophon {
+  clear: both;
+  text-align: center;
+  font-size: .875em;
   padding: 1.714em 0;
   border-top: thin solid #eee;
   margin-top: 1.714em;
