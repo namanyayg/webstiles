@@ -15,102 +15,6 @@ https://github.com/namanyayg/webstiles.
 
 
 
-/* ==========================================================================
-   =CORE
-   ========================================================================== */
-
-body {
-  background: $body-background-color
-}
-
-/* Remember to use normalize or a reset! */
-
-body, input, textarea, button, form, select {
-  font-size: $root-font-size
-  line-height: $root-line-height
-  font-family: $main-font-family
-  color: $root-text-color
-  /* Inputs, forms, etc, can have weird font styles */
-}
-
-a, a:link, a:visited { 
-  text-decoration: none
-  color: $prim-color
-  border-bottom: thin solid transparent
-
-  transition: all .3s ease
-}
-
-a:hover, a:active, a:focus {
-  border-bottom-color: #ddd
-}
-
-.wrap {
-  width: 80em
-  max-width: 95%
-  margin: 0 auto
-}
-
-.ws-item {
-  margin-bottom: 3em
-}
-
-.ws-item > h1 {
-  font-size: .875em
-  color: #999
-  margin: 0 0 1.714em 0
-}
-
-
-
-
-/* ==========================================================================
-   =TYPOGRAPHY
-   ========================================================================== */
-
-p { margin: 0 }
-p + p { margin-top: 1.5em }
-
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-    /* Set defaults for all headings here, 
-    you might want to change fonts or sizes */
-    color: $sec-text-color
-    font-weight: 400
-    font-family: $sec-font-family
-}
-
-h1 {
-    font-size: 2em
-    line-height: 1.5
-    margin: (1.5em/2) 0 (1em/2)
-}
-
-h2 {
-    font-size: 1.5em
-    line-height: 1
-    margin: 1em 0 (1em/1.5)
-}
-
-h3 {
-    font-size: 1.25em
-    line-height: 1.2
-    margin: 1.2em 0 (1em/1.25)
-}
-
-h4 {
-    font-size: 1.125em
-    line-height: 1.333333
-    margin: .666666em 0
-}
-
-h5, h6 { 
-    font-size: 1em
-    line-height: 1.5
-    margin: .75em 0
-    text-transform: uppercase
-}
-
 
 
 
@@ -135,7 +39,7 @@ h5, h6 {
 }
 
 .menu { float: right }
-.menu ul { padding: 1.5em 0 margin: 0 }
+.menu ul { padding: 1.5em 0; margin: 0 }
 
 .menu li {
   list-style: none

@@ -1,4 +1,3 @@
-
 /* ==========================================================================
    =GRID
    ========================================================================== */
@@ -14,23 +13,20 @@
   padding-bottom: 1.5em
 }
 
-.stack-clean { padding-bottom: 0 padding-top: 1.5em }
+.stack-clean { padding-bottom: 0; padding-top: 1.5em }
 .stack-clean .sympl { padding-bottom: 1.5em }
 
 .sympl {
   /* Each grid item should have the sympl class, along with at least one class for size */
   float: left
   padding: 0 0 0 1.5em
-
-  -webkit-box-sizing: border-box
-  -moz-box-sizing: border-box
   box-sizing: border-box
 }
 
 .stack:before,
 .stack:after {
-    content: " " /* 1 */
-    display: table /* 2 */
+    content: " "
+    display: table
 }
 
 .stack:after {
@@ -56,65 +52,65 @@
 /* L stands for large. L styles get triggered at 60em, that is, 960px */
 
 @media (max-width: 60em) {
-    .l-half, .l-twoquarters, .l-threesixths { width: 50% }
+  .l-half, .l-twoquarters, .l-threesixths { width: 50% }
 
-    .l-onethird, .l-twosixths { width: 33.333333% }
-    .l-twothirds, .l-foursixths { width: 66.666666% }
+  .l-onethird, .l-twosixths { width: 33.333333% }
+  .l-twothirds, .l-foursixths { width: 66.666666% }
 
-    .l-quarter { width: 25% }
-    .l-three-quarters { width: 75% }
+  .l-quarter { width: 25% }
+  .l-three-quarters { width: 75% }
 
-    .l-onefifth { width: 20% }
-    .l-twofifths { width: 40% }
-    .l-threefifths { width: 60% }
-    .l-fourfifths { width: 80% }
+  .l-onefifth { width: 20% }
+  .l-twofifths { width: 40% }
+  .l-threefifths { width: 60% }
+  .l-fourfifths { width: 80% }
 
-    .l-onesixth { width: 16.666666% }
-    .l-fivesixths { width: 83.333333% }
+  .l-onesixth { width: 16.666666% }
+  .l-fivesixths { width: 83.333333% }
 
-    .hide-l-and-below { display: none visibility: hidden }
-    .show-l-and-below { display: block visibility: visible }
+  .hide-l-and-below { display: none; visibility: hidden }
+  .show-l-and-below { display: block; visibility: visible }
 }
 
 @media (max-width: 60em) and (min-width: 45em) {
-    .hide-on-l { display: none visibility: hidden }
-    .show-on-l { display: block visibility: visible }
+  .hide-on-l { display: none; visibility: hidden }
+  .show-on-l { display: block; visibility: visible }
 }
 
 /* M stands for medium. M styles get triggered at 45em, that is, 720px */
 
 @media (max-width: 45em) {
-    .m-full { width: 100% }
+  .m-full { width: 100% }
 
-    .m-half, .m-twoquarters { width: 50% }
+  .m-half, .m-twoquarters { width: 50% }
 
-    .m-onethird { width: 33.333333% }
-    .m-twothirds { width: 66.666666% }
+  .m-onethird { width: 33.333333% }
+  .m-twothirds { width: 66.666666% }
 
-    .m-quarter { width: 25% }
-    .m-three-quarters { width: 75% }
+  .m-quarter { width: 25% }
+  .m-three-quarters { width: 75% }
 
-    .hide-m-and-below { display: none visibility: hidden }
-    .show-m-and-below { display: block visibility: visible }   
+  .hide-m-and-below { display: none; visibility: hidden }
+  .show-m-and-below { display: block; visibility: visible }   
 }
 
 @media (max-width: 45em) and (min-width: 30em) {
-    .hide-on-m { display: none visibility: hidden }
-    .show-on-m { display: block visibility: visible }
+  .hide-on-m { display: none; visibility: hidden }
+  .show-on-m { display: block; visibility: visible }
 }
 
 /* S stands for small. S styles get triggered at 30em, ie, 480px */
 
 @media (max-width: 30em) {
-    .sympl { width: 100% }
-    
-    .s-full { width: 100% }
+  .sympl { width: 100% }
 
-    .s-half, .s-twoquarters { width: 50% }
+  .s-full { width: 100% }
 
-    .s-onethird { width: 33.333333% }
-    .s-twothirds { width: 66.666666% }
+  .s-half, .s-twoquarters { width: 50% }
 
-    .hide-on-s { display: none visibility: hidden }
-    .show-on-s { display: block visibility: visible }
+  .s-onethird { width: 33.333333% }
+  .s-twothirds { width: 66.666666% }
+
+  .hide-on-s { display: none; visibility: hidden }
+  .show-on-s { display: block; visibility: visible }
 }
