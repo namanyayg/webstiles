@@ -13,9 +13,47 @@ https://github.com/namanyayg/webstiles.
 @import 'partials/_var'
 
 
+/* ==========================================================================
+   =CORE
+   ========================================================================== */
 
+body {
+  background: $body-background-color;
+}
 
+body, input, textarea, button, form, select {
+  font-size: $root-font-size;
+  line-height: $root-line-height;
+  font-family: $main-font-family;
+  color: $root-text-color;
+}
 
+a, a:link, a:visited { 
+  text-decoration: none;
+  color: $prim-color;
+  border-bottom: thin solid transparent;
+  transition: all .3s ease;
+}
+
+a:hover, a:active, a:focus {
+  border-bottom-color: #ddd;
+}
+
+.wrap {
+  width: 80em;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.ws-item {
+  margin-bottom: 3em;
+}
+
+.ws-item > h1 {
+  font-size: .875em;
+  color: #999;
+  margin: 0 0 1.714em 0;
+}
 
 
 
@@ -39,17 +77,18 @@ https://github.com/namanyayg/webstiles.
 }
 
 .menu { float: right }
-.menu ul { padding: 1.5em 0; margin: 0 }
+
+.menu ul {
+  margin: 0
+  padding: 0
+}
 
 .menu li {
   list-style: none
   display: inline-block
-  margin: 0 0 .5em .5em
 }
 
 .menu a {
-  padding: .5em
-  border: .25em solid $prim-color
   display: block
 }
 
@@ -110,9 +149,9 @@ input[type='button'], input[type='submit'], button, .button {
   background: transparent 
   line-height: 1
   cursor: pointer
-  padding: 1em 1.5em
+  padding: 1.25em 1.75em
   color: white
-  border: .25em solid
+  border: 1px solid
   transition: all .3s ease
   display: block
   margin-bottom: .75em
@@ -133,9 +172,9 @@ button-style(color, perc) {
   }
 }
 
-.btn-primary { button-style($prim-color, 10%) }
-.btn-primary { button-style($sec-color, 10%) }
-.btn-primary { button-style($light-grey, 10%) }
+.btn-primary { button-style: $prim-color 12% }
+.btn-secondary { button-style: $sec-color 5% }
+.btn-tertiary { button-style: $light-grey 4% }
 
 
 
