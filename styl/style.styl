@@ -93,13 +93,10 @@ input, textarea {
   display: block
   padding: .5em
   margin-bottom: .75em
-  border: .25em solid #eee
+  border: 1px solid #eee
   width: 100%
-  
   box-sizing: border-box
-
   transition: all .3s ease
-
   resize: none
 }
 
@@ -116,58 +113,30 @@ input[type='button'], input[type='submit'], button, .button {
   padding: 1em 1.5em
   color: white
   border: .25em solid
-
   transition: all .3s ease
-
   display: block
   margin-bottom: .75em
   margin-bottom: .75rem  
 }
 
-
-.btn-primary {
-  background: $prim-color
-  border-color: darken($prim-color, 10%)
+button-style(color, perc) {
+  background: color
+  border-color: darken(color, perc)
 
   &:hover {
-    background: darken($prim-color, 10%)
-    border-color: $prim-color
+    background: darken(color, perc)
+    border-color: color
   }
   
   &:focus, &:active {
-    background: darken($prim-color, 10%)
+    background: darken(color, perc)
   }
 }
 
-.btn-secondary { 
-  background: $sec-color
-  border-color: darken($sec-color, 10%)
-  
-  &:hover {
-    background: darken($sec-color, 10%)
-    border-color: $sec-color
-  }
+.btn-primary { button-style($prim-color, 10%) }
+.btn-primary { button-style($sec-color, 10%) }
+.btn-primary { button-style($light-grey, 10%) }
 
-  &:focus, &:active {
-    background: darken($sec-color, 10%)
-  }
-}
-
-
-.btn-tertiary {
-  font-size: .875em
-  background: $light-grey
-  border-color: darken($light-grey, 10%)
-
-  &:hover {
-    background: darken($light-grey, 10%)
-    border-color: $light-grey
-  }
-
-  &:focus, &:active {
-    background: darken($light-grey, 10%)
-  }
-}
 
 
 
