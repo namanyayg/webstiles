@@ -2,9 +2,9 @@
 
 Webstiles - A simple template for web design prototyping.
 
-By Namanyay Goel | http://namanyayg.com/ | @namanyayg
+By Namanyay Goel | http//namanyayg.com/ | @namanyayg
 
-https://github.com/namanyayg/webstiles.
+https//github.com/namanyayg/webstiles.
 
 */
 
@@ -17,43 +17,43 @@ https://github.com/namanyayg/webstiles.
    =CORE
    ========================================================================== */
 
-body {
-  background: $body-background-color;
-}
+body 
+  background $body-background-color
 
-body, input, textarea, button, form, select {
-  font-size: $root-font-size;
-  line-height: $root-line-height;
-  font-family: $main-font-family;
-  color: $root-text-color;
-}
 
-a, a:link, a:visited { 
-  text-decoration: none;
-  color: $prim-color;
-  border-bottom: thin solid transparent;
-  transition: all .3s ease;
-}
+body, input, textarea, button, form, select 
+  font-size $root-font-size
+  line-height $root-line-height
+  font-family $main-font-family
+  color $root-text-color
 
-a:hover, a:active, a:focus {
-  border-bottom-color: #ddd;
-}
 
-.wrap {
-  width: 80em;
-  max-width: 95%;
-  margin: 0 auto;
-}
+a, a:link, a:visited  
+  text-decoration none
+  color $prim-color
+  border-bottom thin solid transparent
+  transition all .3s ease
 
-.ws-item {
-  margin-bottom: 3em;
-}
 
-.ws-item > h1 {
-  font-size: .875em;
-  color: #999;
-  margin: 0 0 1.714em 0;
-}
+a:hover, a:active, a:focus 
+  border-bottom-color #ddd
+
+
+.wrap 
+  width 80em
+  max-width 95%
+  margin 0 auto
+
+
+.ws-item 
+  margin-bottom 3em
+
+
+.ws-item > h1 
+  font-size .875em
+  color #999
+  margin 0 0 1.714em 0
+
 
 
 
@@ -61,41 +61,42 @@ a:hover, a:active, a:focus {
    =MASTHEAD
    ========================================================================== */
 
-.masthead { 
-  background: #f6f6f6 
-  overflow: hidden 
-  margin-bottom: 1.5em 
-}
+.masthead  
+  background #f6f6f6 
+  overflow hidden 
+  margin-bottom 1.5em 
 
-.logo h1 { 
-  margin: 0 
-  float: left 
-  padding: .5em 0
-  font-family: $main-font-family
-  font-size: 2em
-  line-height: 1
-}
 
-.menu { float: right }
+.logo h1  
+  margin 0 
+  float left 
+  padding .5em 0
+  font-family $main-font-family
+  font-size 2em
+  line-height 1
 
-.menu ul {
-  margin: 0
-  padding: 0
-}
 
-.menu li {
-  list-style: none
-  display: inline-block
-}
+.menu  
+  float right 
 
-.menu a {
-  display: block
-}
+.menu ul 
+  margin 0
+  padding 0
 
-.menu a:hover {
-  background: $prim-color
-  color: white
-}
+
+.menu li 
+  list-style none
+  display inline-block
+
+
+.menu a 
+  display block
+
+
+.menu a:hover 
+  background $prim-color
+  color white
+
 
 
 
@@ -105,16 +106,22 @@ a:hover, a:active, a:focus {
    =COLOR
    ========================================================================== */
 
-[class^="color"] {
-  height: 5em
-}
+[class^="color"] 
+  height 5em
 
-.color-1 { background: $color-1-color }
-.color-2 { background: $color-2-color }
-.color-3 { background: $color-3-color }
-.color-4 { background: $color-4-color }
-.color-5 { background: $color-5-color }
-.color-6 { background: $color-6-color }
+
+.color-1  
+  background $color-1-color 
+.color-2  
+  background $color-2-color 
+.color-3  
+  background $color-3-color 
+.color-4  
+  background $color-4-color 
+.color-5  
+  background $color-5-color 
+.color-6  
+  background $color-6-color 
 
 
 
@@ -124,60 +131,61 @@ a:hover, a:active, a:focus {
    =FORM
    ========================================================================== */
 
-.ws-form { margin-top: -1.5em }
+.ws-form  
+  margin-top -1.5em 
 
-input, textarea {
+input, textarea 
   /* Use for styling text based form elements, like name, email, password. 
   Button/submit specific styles below, those will override */
-  display: block
-  padding: .5em
-  margin-bottom: .75em
-  border: 1px solid #eee
-  width: 100%
-  box-sizing: border-box
-  transition: all .3s ease
-  resize: none
-}
+  display block
+  padding .5em
+  margin-bottom .75em
+  border 1px solid #eee
+  width 100%
+  box-sizing border-box
+  transition all .3s ease
+  resize none
 
-input:focus, textarea:focus {
-  outline: none
-  border-color: $prim-color
-}
 
-input[type='button'], input[type='submit'], button, .button {
-  border: none
-  background: transparent 
-  line-height: 1
-  cursor: pointer
-  padding: 1.25em 1.75em
-  color: white
-  border: 1px solid
-  transition: all .3s ease
-  display: block
-  margin-bottom: .75em
-  margin-bottom: .75rem  
-}
+input:focus, textarea:focus 
+  outline none
+  border-color $prim-color
 
-button-style(color, perc) {
-  background: color
-  border-color: darken(color, perc)
 
-  &:hover {
-    background: darken(color, perc)
-    border-color: color
-  }
+input[type='button'], input[type='submit'], button, .button 
+  border none
+  background transparent 
+  line-height 1
+  cursor pointer
+  padding 1.25em 1.75em
+  color white
+  border 1px solid
+  transition all .3s ease
+  display block
+  margin-bottom .75em
+  margin-bottom .75rem  
+
+
+button-style(color, perc) 
+  background color
+  border-color darken(color, perc)
+
+  &:hover 
+    background darken(color, perc)
+    border-color color
   
-  &:focus, &:active {
-    background: darken(color, perc)
-  }
-}
-
-.btn-primary { button-style: $prim-color 12% }
-.btn-secondary { button-style: $sec-color 5% }
-.btn-tertiary { button-style: $light-grey 4% }
+  
+  &:focus, &:active 
+    background darken(color, perc)
+  
 
 
-
+.btn-primary  
+  button-style $prim-color 12% 
+.btn-secondary  
+  button-style $sec-color 5% 
+.btn-tertiary  
+  button-style $light-grey 4% 
 
 
 
@@ -186,10 +194,10 @@ button-style(color, perc) {
    =ADJECTIVES
    ========================================================================== */
 
-.ws-adjectives div {
-  font-size: 1.5em
-  padding-bottom: .25em
-}
+.ws-adjectives div 
+  font-size 1.5em
+  padding-bottom .25em
+
 
 
 
@@ -200,11 +208,11 @@ button-style(color, perc) {
    =COLOPHON
    ========================================================================== */
 
-.colophon { 
-  clear: both 
-  text-align: center 
-  font-size: .875em 
-  padding: 1.714em 0
-  border-top: thin solid #eee
-  margin-top: 1.714em
-}
+.colophon  
+  clear both 
+  text-align center 
+  font-size .875em 
+  padding 1.714em 0
+  border-top thin solid #eee
+  margin-top 1.714em
+
