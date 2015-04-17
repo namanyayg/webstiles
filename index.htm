@@ -4,120 +4,116 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-	<title>Your Webstile</title>
+	<title>Webstiles - A modern template to help prototyping in the browser</title>
 
 	<meta name="viewport" content="width=device-width">
 
-	
+	<link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72-precomposed.png">
+	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="shortcut icon" href="favicon.png">
+
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400|Montserrat:400,700' rel='stylesheet' type='text/css'>
+
 	<link rel="stylesheet" href="css/style.css" />
+
+	<script>
+  	var _gaq = _gaq || [];
+ 	 _gaq.push(['_setAccount', 'UA-30368451-2']);
+ 	 _gaq.push(['_trackPageview']);
+  	 (function() {
+   	 var ga = document.createElement('script');
+   	 ga.type = 'text/javascript';
+   	 ga.async = true;
+   	 ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+   	 var s = document.getElementsByTagName('script')[0];
+   	 s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+
+
 </head>
 <body>
-<header class="masthead" role="banner"><div class="wrap">
-	<div class="logo">
-		<h1>Logo</h1>
-	</div><!-- /.logo -->
+	<header class="masthead" role="banner"><div class="wrap">
+		<div class="logo smooth"><h1><span>Webstiles</span><img src="images/logo_white.png" alt="Webstiles" title="Webstiles"></h1></div>
 
-	<nav class="menu" role="navigation">
-		<ul>
-			<li><a href="#">Item 1</a>
-			<li><a href="#">Item 2</a>
-			<li><a href="#">Item 3</a>
-			<li><a href="#">Item 4</a>
-			<li><a href="#">Item 5</a>
-		</ul>
-	</nav><!-- /nav.menu -->
-</div></header>
+		<section class="hero">
+			<h1>Webstiles&mdash;A simple template for in-browser web design prototyping</h1>
+			<p>Webstiles is a small HTML/SCSS template that allows you to define colors, typography, buttons, forms, and the mood quickly and easily.</p>
 
-	<div class="wrap">
-	<div class="content" role="main">
-		<div class="stack">
-			<div class="sympl half m-full">
-				
-				<section class="ws-item ws-colors">
-					<h1>Colors</h1>
-					<div class="stack stack-clean">
-						<div class="sympl onesixth s-half">
-							<div class="color-1"></div>
-						</div>
-						<div class="sympl onesixth s-half">
-							<div class="color-2"></div>
-						</div>
-						<div class="sympl onesixth s-half">
-							<div class="color-3"></div>
-						</div>
-						<div class="sympl onesixth s-half">
-							<div class="color-4"></div>
-						</div>
-						<div class="sympl onesixth s-half">
-							<div class="color-5"></div>
-						</div>
-						<div class="sympl onesixth s-half">
-							<div class="color-6"></div>
-						</div>
-					</div>
-				</section><!-- /.ws-colors -->
+			<a href="https://github.com/namanyayg/webstiles/archive/master.zip" class="button" onClick="_gaq.push(['_trackEvent', 'Download', 'Webstiles', 'From Hero']);" download>Download</a><!--
 
-				<section class="ws-item ws-form">
-					<h1>Form</h1>
+			--><a href="demo/index.htm" target="_blank" class="button" onClick="_gaq.push(['_trackEvent', 'To Demo', 'Webstiles', 'From Hero']);">Demo</a>
 
-					<input type="email" placeholder="lorem ipsum dolor">
-					<input type="url" placeholder="sit amet.">
-					<textarea cols="30" rows="10" placeholder="consectetur adipisicing"></textarea>
+			<footer>
+				<p>Webstiles is created by <a href="http://namanyayg.com/" rel="designer">Namanyay Goel</a>. Find him on <a href="http://twitter.com/namanyayg">Twitter</a> or <a href="http://dribbble.com/namanyayg">Dribbble</a>.<br>
+				It is fully open source (<a href="http://github.com/namanyayg/webstiles" onClick="_gaq.push(['_trackEvent', 'To Github', 'Webstiles', 'From Hero']);">Github</a>). Like Webstiles? <a onClick="_gaq.push(['_trackEvent', 'Tweet', 'Webstiles', 'Under .What is a Webstile?. ']);" href="https://twitter.com/share?url=http://webstiles.namanyayg.com&text=Webstiles+-+An+awesome+template+for+in-browser+prototyping&via=namanyayg&hastag=webstiles" target="_blank"><span class="icon-twitter"></span> Spread the word!</a></p>
+			</footer>
+		</section>
+	</div></header>
 
-					<button class="button btn-primary">Primary Button</button>
-					<button class="button btn-secondary">Secondary Button</button>
-					<button class="button btn-tertiary">Tertiary Button</button>
-				</section><!-- /.ws-form -->
-			</div>
+<div class="wrap wrap--content">
+	<div class="content">
+		<section>
+			<h1>What is a Webstile?</h1>
+			<p>Webstiles is a template to help you prototype in the browser, to quicky define colors, fonts, and the overall mood of a website.</p>
+			<p>It is a type of design deliverable, heavily inspired from <a href="http://styletil.es">Style Tiles</a>.
+			<p>You <a href="https://github.com/namanyayg/webstiles/archive/master.zip" onClick="_gaq.push(['_trackEvent', 'Download', 'Webstiles', 'First line']);">download the template</a>, open up its SCSS, set fonts and colors. You then open up the HTML file, and change the headlines/slogans and adjectives, and optional, remove any sections not required. Once you&rsquo;re done, you have a finished webstile that you could present to your clients or share with your team.</p>
+			</p><p>Webstiles tell the mood of the website, by defining typography, colors, layout and buttons. They help communication between the designer and the client, and are a step before full-fledged mockups, but one step after wireframes.
+			</p>
+			<p>Feel free to <a href="demo/index.htm" target="_blank" onClick="_gaq.push(['_trackEvent', 'To Demo', 'Webstiles', 'Under what is feel free to']);">check out the demo</a>, <a href="https://github.com/namanyayg/webstiles/archive/master.zip" onClick="_gaq.push(['_trackEvent', 'Download', 'Webstiles', 'Under what is feel free to']);">download webstiles&rsquo; template</a>, and mess around!</p>
+			<p>Like it? <a onClick="_gaq.push(['_trackEvent', 'Tweet', 'Webstiles', 'Under .What is a Webstile?. ']);" href="https://twitter.com/share?url=http://webstiles.namanyayg.com&text=Webstiles+-+An+awesome+template+for+in-browser+prototyping&via=namanyayg&hastag=webstiles" target="_blank"><span class="icon-twitter"></span> Tweet it!</a></p>
+		</section>
 
+		<section>
+			<h1>How to?</h1>
+			<ul>
+				<li><strong>Step 1: </strong><a href="https://github.com/namanyayg/webstiles/archive/master.zip" onClick="_gaq.push(['_trackEvent', 'Download', 'Webstiles', 'Under how to']);">Download the template</a></li>
+				<li><strong>Step 2: </strong>Open up its CSS and HTML files. (<code>style.scss</code> and <code>index.htm</code> respectively)</li>
+				<li><strong>Step 3: </strong>In the CSS, change the colors and typefaces. There are SASS variables that you can use to quickly change colors and fonts. Mess around with the header, menu, and footer styling too.</li>
+				<li><strong>Step 4: </strong>You&rsquo;re almost done. In the HTML, change the header, footer, adjectives, and the headings/slogans. Remove any elements you don&rsquo;t want.</li>
+				<li><strong>Step 5: </strong>You&rsquo;re done! Upload it for client feedback, or send to your team!</li>
+			</ul>
 
-			<div class="sympl half m-full">
+			<p>Helpful? <a onClick="_gaq.push(['_trackEvent', 'Tweet', 'Webstiles', 'Under .How To.']);" href="https://twitter.com/share?url=http://webstiles.namanyayg.com&text=Webstiles+-+An+awesome+template+for+in-browser+prototyping&via=namanyayg&hastag=webstiles" target="_blank"><span class="icon-twitter"></span> Spread the word!</a></p>
+		</section>
 
-				<section class="ws-item ws-typography">
-					<h1>Typography</h1>
-					<aside>
-						<h1>Lorem ipsum dolor sit amet.</h1>
-						<h2>Lorem ipsum dolor sit amet.</h2>
-						<h3>Lorem ipsum dolor sit amet.</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus, <a href="#">A link</a> aliquam commodi deserunt corporis repellat facere? Suscipit, minus totam eveniet iste non tempora <em>consectetur</em> deserunt dicta <strong>voluptates</strong> ipsam facere quidem magni.</p>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil, quidem, quae, nobis amet at vero illo provident rem quos debitis distinctio maiores dolor qui sapiente veniam earum atque similique quibusdam?</p>
-					</aside>
-				</section><!-- /.ws-typography -->
+		<section>
+			<h1>Hmm&hellip; But why should I use webstiles?</h1>
 
-				<section class="ws-item ws-adjectives">
-					<!-- Describe the project here -->
-					<h1>Adjectives</h1>
-					<div class="stack">
-						<div class="sympl onethird s-half">
-							Fresh
-						</div>
-						<div class="sympl onethird s-half">
-							Clean
-						</div>
-						<div class="sympl onethird s-half">
-							Fun
-						</div>
-						<div class="sympl onethird s-half">
-							Simple
-						</div>
-						<div class="sympl onethird s-half">
-							Flat
-						</div>
-						<div class="sympl onethird s-half">
-							Modern
-						</div>
-					</div>
-				</section><!-- /.ws-adjectives -->
+			<p>Clients might require more than 1 concept design. Instead of creating full mockups, just create a few webstiles quickly and send them for feedback. Once you've got a better idea of what they want, move on to making the actual site/mockup!</p>
 
-			</div>
-		</div>
-	</div>
+			<p>Webstiles are also useful when doing any type of web design work. They help make your idea more solid and real, quickly.</p>
+
+			<p>Finally, since webstiles is a web template, it gives your client a much better idea of their actual website. Webstiles is responsive, so it would work on mobiles and tablets as well.</p>
+
+		</section>
+
+		<section>
+			<h1>Why Webstiles?</h1>
+			<p>Webstiles evolved as a personal need. I loved the concept of Style Tiles, but disliked designing in Photoshop, so I took the liberty of making Webstiles. When I came to use it more and more, I realized that other people could benefit from it too, and here we are!</p> 
+			<p><a href="http://github.com/namanyayg/webstiles" onClick="_gaq.push(['_trackEvent', 'To Github', 'Webstiles', 'From Why Webstiles']);">Webstiles is open source and is on Github as well!</a></p>
+		</section>
+
+		<section>
+			<h1>Signing off</h1>
+			<p>I now use webstiles in pretty much every project of mine&#8202;&mdash;&#8202;and I believe you should too. Try it once, <a href="demo/index.htm" target="_blank" onClick="_gaq.push(['_trackEvent', 'To Demo', 'Webstiles', 'Signing Off']);">take a look at the demo</a>, <a href="https://github.com/namanyayg/webstiles/archive/master.zip" onClick="_gaq.push(['_trackEvent', 'Download', 'Webstiles', 'Signing Off']);">download the template</a>. Once again, thanks to Samantha for her amazing concept of <a href="http://styletil.es">Style Tiles</a>.</p>
+			<p>Don&rsquo;t Panic!</p>
+
+			<p>Like it? <a onClick="_gaq.push(['_trackEvent', 'Tweet', 'Webstiles', 'Under .Signing Off.']);" href="https://twitter.com/share?url=http://webstiles.namanyayg.com&text=Webstiles+-+An+awesome+template+for+in-browser+prototyping&via=namanyayg&hastag=webstiles" target="_blank"><span class="icon-twitter"></span> A tweet would be awesome!</a></p>
+		</section>
+
+		<footer class="colophon">
+			<p>Heavy inspiration from <a href="http://styletil.es/">Style Tiles</a> concept by Samantha Warren.</p><p>
+				Webstiles &copy; 2013. Under MIT License. <a href="http://github.com/namanyayg/webstiles" onClick="_gaq.push(['_trackEvent', 'To Github', 'Webstiles', 'From Footer']);">Github</a>.<br>By <a href="http://namanyayg.com/" rel="designer">Namanyay Goel</a>.</p>
+				<p><a href="http://twitter.com/namanyayg"><span class="icon-twitter"></span></a> <a href="http://dribbble.com/namanyayg"><span class="icon-dribbble"></span></a></p>
+		</footer><!-- FOOTER -->
 
 
-	<footer class="colophon" role="contentinfo">
-		<!-- REMEMBER TO CHANGE THIS! -->
-		<p>Project Name v0.8<br>
-	</footer><!-- FOOTER -->
+	</div><!-- PRIMARY -->
+
 </div>
 </body>
 </html>

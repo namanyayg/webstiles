@@ -1,0 +1,42 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>
+Created by FontForge 20100429 at Sat Jan  5 16:44:11 2013
+ By root
+Copyright (C) 2012 by original authors @ fontello.com
+</metadata>
+<defs>
+<font id="webstile-icons" horiz-adv-x="364" >
+  <font-face 
+    font-family="webstile-icons"
+    font-weight="500"
+    font-stretch="normal"
+    units-per-em="1000"
+    panose-1="2 0 6 3 0 0 0 0 0 0"
+    ascent="850"
+    descent="-150"
+    bbox="15 -150 1245 850"
+    underline-thickness="50"
+    underline-position="-100"
+    unicode-range="U+0044-0066"
+  />
+<missing-glyph 
+d="M33 0v666h265v-666h-265zM66 33h199v600h-199v-600z" />
+    <glyph glyph-name=".notdef" 
+d="M33 0v666h265v-666h-265zM66 33h199v600h-199v-600z" />
+    <glyph glyph-name=".null" horiz-adv-x="0" 
+ />
+    <glyph glyph-name="nonmarkingreturn" horiz-adv-x="333" 
+ />
+    <glyph glyph-name="D" unicode="D" horiz-adv-x="1030" 
+d="M15 350q0 144 70 256.5t179 176.5q115 67 251 67q144 0 256.5 -70t176.5 -179q67 -115 67 -251q0 -144 -70 -256.5t-179 -176.5q-115 -67 -251 -67q-144 0 -256.5 70t-176.5 179q-67 115 -67 251zM99 370q0 -2 -0.5 -10t-0.5 -10q0 -156 105 -275q47 92 152 179
+q102 84 203 107q-9 22 -29 63q-171 -55 -372 -55q-45 0 -58 1zM176 451q167 0 317 45q-78 137 -167 225q-77 -39 -134 -109.5t-81 -158.5q30 -2 65 -2zM515 -67q75 0 147 28q-19 170 -78 331q-93 -20 -186 -101t-138 -170q112 -88 255 -88zM576 526q136 57 205 145
+q-115 96 -266 96q-49 0 -102 -14q89 -92 163 -227zM646 374q69 7 161 7q61 0 123 -3q-7 135 -98 242q-64 -97 -220 -165q12 -25 34 -81zM671 304q51 -149 69 -304q75 49 126.5 128t62.5 176q-82 5 -133 5q-47 0 -125 -5z" />
+    <glyph glyph-name="T" unicode="T" horiz-adv-x="1260" 
+d="M15 -37q30 -3 60 -3q176 0 314 108q-84 1 -148.5 51.5t-87.5 123.5q17 -4 47 -4q36 0 67 9q-85 16 -144 85t-59 162v3q52 -29 115 -31q-49 32 -81 87t-32 123t35 127q89 -112 223 -183.5t297 -80.5q-7 31 -7 58q0 104 74 178t179 74q109 0 184 -80q85 18 160 62
+q-28 -91 -110 -140q75 9 144 40q-48 -75 -125 -131v-33q0 -212 -120 -396q-131 -202 -346 -280q-117 -42 -252 -42q-208 0 -387 113z" />
+    <glyph glyph-name="f" unicode="f" horiz-adv-x="568" 
+d="M15 313v191h154v96q0 104 67 177t164 73h153v-191h-153q-17 0 -28 -18t-11 -39v-98h192v-191h-192v-463h-192v463h-154z" />
+  </font>
+</defs></svg>

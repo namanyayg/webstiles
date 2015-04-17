@@ -1,553 +1,480 @@
-/*
+/*!
+Webstiles - The modern tool to help prototyping in the browser. By Namanyay Goel, http://namanyayg.com/
 
-Webstiles - A simple template for web design prototyping.
+Under MIT License.
 
-By Namanyay Goel | http//namanyayg.com/ | @namanyayg
-
-https//github.com/namanyayg/webstiles.
-
+https://github.com/namanyayg/webstiles.
 */
-/* normalize.css v2.0.1 | MIT License | git.io/normalize */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-nav,
-section,
-summary {
-  display: block;
+
+/*! Sympl http://github.com/namanyayg/sympl | MIT License | Namanyay Goel http://namanyayg.com/ */
+
+/*! normalize.css v2.0.1 | MIT License | git.io/normalize */
+
+
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:400;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */
+input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+
+@font-face {
+  font-family: 'webstile-icons';
+  src: url("../font/webstile-icons.eot");
+  src: url("../font/webstile-icons.eot?#iefix") format('embedded-opentype'), url("../font/webstile-icons.woff") format('woff'), url("../font/webstile-icons.ttf") format('truetype'), url("../font/webstile-icons.svg#webstile-icons") format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
-audio,
-canvas,
-video {
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: 'webstile-icons';
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
   display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: 0.2em;
+  text-align: center;
+  opacity: 0.8;
+  line-height: 1em;
 }
-audio:not([controls]) {
-  display: none;
-  height: 0;
+
+.icon-dribbble:before { content: '\44'; } /* 'D' */
+.icon-twitter:before { content: '\54'; } /* 'T' */
+.icon-facebook:before { content: '\66'; } /* 'f' */
+
+
+
+
+/*! Sympl.css v3.0.0 sympl.namanyayg.com | By Namanyay Goel, namanyayg.com, @namanyayg */
+
+/*** =CORE ***/
+
+body {
+  margin: 0; padding: 0;
 }
-[hidden] {
-  display: none;
+
+/* Remember to use normalize or a reset! */
+
+body, input, textarea, button, form, select {
+  font: 300 112.5%/1.5 Lato, Verdana, sans-serif;
+    color: #444;
+  /* Inputs, forms, etc, can have weird font styles */
 }
-html {
-  font-family: sans-serif;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
+
+a, a:link, a:visited { 
+  text-decoration: none;
+  color: #0e90eb;
+  border-bottom: thin solid transparent;
+
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
 }
-a:focus {
-  outline: thin dotted;
+
+a:hover, a:active, a:focus {
+  color: #0b7ae7;
+  border-bottom: thin solid #e6e6e6;
 }
-a:active,
-a:hover {
-  outline: 0;
+
+
+
+/*** =TYPOGRAPHY ***/
+
+p { margin: 0; }
+p + p { margin-top: 1.5em; }
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    /* Set defaults for all headings here, 
+    you might want to change fonts or sizes */
+    font-weight: 400;
+    color: #222;
+    font-family: Montserrat;
 }
+
 h1 {
-  font-size: 2em;
+    font-size: 2em;
+    line-height: 1.5;
+    margin: .375em 0;
 }
-abbr[title] {
-  border-bottom: 1px dotted;
+
+h2 {
+    font-size: 1.5em;
+    line-height: 1;
+    margin: .5em 0;
 }
-b,
-strong {
-  font-weight: 700;
+
+h3 {
+    font-size: 1.25em;
+    line-height: 1.2;
+    margin: .6em 0;
 }
-dfn {
-  font-style: italic;
+
+h4 {
+    font-size: 1.125em;
+    line-height: 1.333333;
+    margin: .666666em 0;
 }
-mark {
-  background: #ff0;
-  color: #000;
+
+h5, h6 { 
+    font-size: 1em;
+    line-height: 1.5;
+    margin: .75em 0;
+    text-transform: uppercase;
 }
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, serif;
-  font-size: 1em;
-}
-pre {
-  white-space: pre-wrap;
-  word-wrap: break-word;
-}
-q {
-  quotes: 2 1 C 2 1 D 2 18 2 19;
-}
-small {
-  font-size: 80%;
-}
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-sup {
-  top: -0.5em;
-}
-sub {
-  bottom: -0.25em;
-}
-img {
-  border: 0;
-}
-svg:not(:root) {
-  overflow: hidden;
-}
-fieldset {
-  border: 1px solid #c0c0c0;
-  margin: 0 2px;
-  padding: 0.35em 0.625em 0.75em;
-}
-button,
-input,
-select,
-textarea {
-  font-family: inherit;
-  font-size: 100%;
-  margin: 0;
-}
-button,
-input {
-  line-height: normal;
-}
-button,
-html input[type=button],
-input[type=reset],
-input[type=submit] {
-  -webkit-appearance: button;
-  cursor: pointer;
-}
-button[disabled],
-input[disabled] {
-  cursor: default;
-}
-input[type=checkbox],
-input[type=radio] {
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
-  padding: 0;
-}
-input[type=search] {
-  -webkit-appearance: textfield;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-}
-input[type=search]::-webkit-search-cancel-button,
-input[type=search]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-textarea {
-  overflow: auto;
-  vertical-align: top;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-body,
-figure {
-  margin: 0;
-}
-legend,
-button::-moz-focus-inner,
-input::-moz-focus-inner {
-  border: 0;
-  padding: 0;
-}
-ul {
-  padding: 0;
-}
+
+
+/*** =GRID ***/
+
 .stack {
-/* A set of grid items must be in a stack.
+  /* A set of grid items must be in a stack.
   Use sympl-stack when you want a margin at the bottom */
   clear: both;
   margin: 0 0 0 -1.5em;
 }
+
 .stack-sympl {
   padding-bottom: 1.5em;
 }
-.stack-clean {
-  padding-bottom: 0;
-  padding-top: 1.5em;
-}
-.stack-clean .sympl {
-  padding-bottom: 1.5em;
-}
+
+.stack-clean { padding-bottom: 0; padding-top: 1.5em; }
+.stack-clean .sympl { padding-bottom: 1.5em; }
+
 .sympl {
-/* Each grid item should have the sympl class, along with at least one class for size */
+  /* Each grid item should have the sympl class, along with at least one class for size */
   float: left;
   padding: 0 0 0 1.5em;
+
+  -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-       box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 .stack:before,
 .stack:after {
-  content: " ";
-  display: table;
+    content: " "; /* 1 */
+    display: table; /* 2 */
 }
+
 .stack:after {
-  clear: both;
+    clear: both;
 }
-.half,
-.twoquarters,
-.threesixths {
-  width: 50%;
-}
-.onethird,
-.twosixths {
-  width: 33.333333%;
-}
-.twothirds,
-.foursixths {
-  width: 66.666666%;
-}
-.quarter {
-  width: 25%;
-}
-.three-quarters {
-  width: 75%;
-}
-.onefifth {
-  width: 20%;
-}
-.twofifths {
-  width: 40%;
-}
-.threefifths {
-  width: 60%;
-}
-.fourfifths {
-  width: 80%;
-}
-.onesixth {
-  width: 16.666666%;
-}
-.fivesixths {
-  width: 83.333333%;
-}
+
+.half, .twoquarters, .threesixths { width: 50%; }
+
+.onethird, .twosixths { width: 33.333333%; }
+.twothirds, .foursixths { width: 66.666666%; }
+
+.quarter { width: 25%; }
+.three-quarters { width: 75%; }
+
+.onefifth { width: 20%; }
+.twofifths { width: 40%; }
+.threefifths { width: 60%; }
+.fourfifths { width: 80%; }
+
+.onesixth { width: 16.666666%; }
+.fivesixths { width: 83.333333%; }
+
+/* L stands for large. L styles get triggered at 60em, that is, 960px */
+
 @media (max-width: 60em) {
-  .l-half,
-  .l-twoquarters,
-  .l-threesixths {
-    width: 50%;
-  }
-  .l-onethird,
-  .l-twosixths {
-    width: 33.333333%;
-  }
-  .l-twothirds,
-  .l-foursixths {
-    width: 66.666666%;
-  }
-  .l-quarter {
-    width: 25%;
-  }
-  .l-three-quarters {
-    width: 75%;
-  }
-  .l-onefifth {
-    width: 20%;
-  }
-  .l-twofifths {
-    width: 40%;
-  }
-  .l-threefifths {
-    width: 60%;
-  }
-  .l-fourfifths {
-    width: 80%;
-  }
-  .l-onesixth {
-    width: 16.666666%;
-  }
-  .l-fivesixths {
-    width: 83.333333%;
-  }
-  .hide-l-and-below {
-    display: none;
-    visibility: hidden;
-  }
-  .show-l-and-below {
-    display: block;
-    visibility: visible;
-  }
+    .l-half, .l-twoquarters, .l-threesixths { width: 50%; }
+
+    .l-onethird, .l-twosixths { width: 33.333333%; }
+    .l-twothirds, .l-foursixths { width: 66.666666%; }
+
+    .l-quarter { width: 25%; }
+    .l-three-quarters { width: 75%; }
+
+    .l-onefifth { width: 20%; }
+    .l-twofifths { width: 40%; }
+    .l-threefifths { width: 60%; }
+    .l-fourfifths { width: 80%; }
+
+    .l-onesixth { width: 16.666666%; }
+    .l-fivesixths { width: 83.333333%; }
+
+    .hide-l-and-below { display: none; visibility: hidden; }
+    .show-l-and-below { display: block; visibility: visible; }
 }
+
 @media (max-width: 60em) and (min-width: 45em) {
-  .hide-on-l {
-    display: none;
-    visibility: hidden;
-  }
-  .show-on-l {
-    display: block;
-    visibility: visible;
-  }
+    .hide-on-l { display: none; visibility: hidden; }
+    .show-on-l { display: block; visibility: visible; }
 }
+
+/* M stands for medium. M styles get triggered at 45em, that is, 720px */
+
 @media (max-width: 45em) {
-  .m-full {
-    width: 100%;
-  }
-  .m-half,
-  .m-twoquarters {
-    width: 50%;
-  }
-  .m-onethird {
-    width: 33.333333%;
-  }
-  .m-twothirds {
-    width: 66.666666%;
-  }
-  .m-quarter {
-    width: 25%;
-  }
-  .m-three-quarters {
-    width: 75%;
-  }
-  .hide-m-and-below {
-    display: none;
-    visibility: hidden;
-  }
-  .show-m-and-below {
-    display: block;
-    visibility: visible;
-  }
+    .m-full { width: 100%; }
+
+    .m-half, .m-twoquarters { width: 50%; }
+
+    .m-onethird { width: 33.333333%; }
+    .m-twothirds { width: 66.666666%; }
+
+    .m-quarter { width: 25%; }
+    .m-three-quarters { width: 75%; }
+
+    .hide-m-and-below { display: none; visibility: hidden; }
+    .show-m-and-below { display: block; visibility: visible; }   
 }
+
 @media (max-width: 45em) and (min-width: 30em) {
-  .hide-on-m {
-    display: none;
-    visibility: hidden;
-  }
-  .show-on-m {
-    display: block;
-    visibility: visible;
-  }
+    .hide-on-m { display: none; visibility: hidden; }
+    .show-on-m { display: block; visibility: visible; }
 }
+
+/* S stands for small. S styles get triggered at 30em, ie, 480px */
+
 @media (max-width: 30em) {
-  .sympl {
-    width: 100%;
-  }
-  .s-full {
-    width: 100%;
-  }
-  .s-half,
-  .s-twoquarters {
-    width: 50%;
-  }
-  .s-onethird {
-    width: 33.333333%;
-  }
-  .s-twothirds {
-    width: 66.666666%;
-  }
-  .hide-on-s {
-    display: none;
-    visibility: hidden;
-  }
-  .show-on-s {
-    display: block;
-    visibility: visible;
-  }
+    .sympl { width: 100%; }
+    
+    .s-full { width: 100%; }
+
+    .s-half, .s-twoquarters { width: 50%; }
+
+    .s-onethird { width: 33.333333%; }
+    .s-twothirds { width: 66.666666%; }
+
+    .hide-on-s { display: none; visibility: hidden; }
+    .show-on-s { display: block; visibility: visible; }
 }
-/* ==========================================================================
-   =CORE
-   ========================================================================== */
-body {
-  background: #fff;
-}
-body,
-input,
-textarea,
-button,
-form,
-select {
-  font-size: 100%;
-  line-height: 1.5;
-  font-family: Arial, sans-serif;
-  color: #444;
-}
-a,
-a:link,
-a:visited {
-  text-decoration: none;
-  color: #00bfff;
-  border-bottom: thin solid transparent;
-  -webkit-transition: all 0.3s ease;
-          transition: all 0.3s ease;
-}
-a:hover,
-a:active,
-a:focus {
-  border-bottom-color: #ddd;
-}
-.wrap {
-  width: 80em;
-  max-width: 95%;
-  margin: 0 auto;
-}
-.ws-item {
-  margin-bottom: 3em;
-}
-.ws-item > h1 {
-  font-size: 0.875em;
-  color: #999;
-  margin: 0 0 1.714em 0;
-}
-/* ==========================================================================
-   =MASTHEAD
-   ========================================================================== */
-.masthead {
-  background: #f6f6f6;
-  overflow: hidden;
-  margin-bottom: 1.5em;
-}
-.logo h1 {
-  margin: 0;
-  float: left;
-  padding: 0.5em 0;
-  font-family: Arial, sans-serif;
-  font-size: 2em;
-  line-height: 1;
-}
-.menu {
-  float: right;
-}
-.menu ul {
-  margin: 0;
-  padding: 0;
-}
-.menu li {
-  list-style: none;
-  display: inline-block;
-}
-.menu a {
-  display: block;
-}
-.menu a:hover {
-  background: #00bfff;
-  color: #fff;
-}
-/* ==========================================================================
-   =COLOR
-   ========================================================================== */
-[class^="color"] {
-  height: 5em;
-}
-.color-1 {
-  background: #00bfff;
-}
-.color-2 {
-  background: #ffd700;
-}
-.color-3 {
-  background: #ff6347;
-}
-.color-4 {
-  background: #f5f5f5;
-}
-.color-5 {
-  background: #dcdcdc;
-}
-.color-6 {
-  background: #8b4513;
-}
-/* ==========================================================================
-   =FORM
-   ========================================================================== */
-.ws-form {
-  margin-top: -1.5em;
-}
-input,
-textarea {
-/* Use for styling text based form elements, like name, email, password. 
+
+
+
+/*** =FORMS ***/
+
+input, textarea {
+  /* Use for styling text based form elements, like name, email, password. 
   Button/submit specific styles below, those will override */
-  display: block;
-  padding: 0.5em;
-  margin-bottom: 0.75em;
-  border: 1px solid #eee;
-  width: 100%;
-  -moz-box-sizing: border-box;
-       box-sizing: border-box;
-  -webkit-transition: all 0.3s ease;
-          transition: all 0.3s ease;
-  resize: none;
 }
-input:focus,
-textarea:focus {
-  outline: none;
-  border-color: #00bfff;
+
+input:focus, textarea:focus {
+
 }
-input[type='button'],
-input[type='submit'],
-button,
-.button {
+
+input[type='button'], input[type='submit'], button, a.button {
   border: none;
-  background: transparent;
+  background: transparent; 
   line-height: 1;
   cursor: pointer;
-  padding: 1.25em 1.75em;
-  color: #fff;
-  border: 1px solid;
-  -webkit-transition: all 0.3s ease;
-          transition: all 0.3s ease;
-  display: block;
-  margin-bottom: 0.75em;
-  margin-bottom: 0.75rem;
+  padding: .75em 1em;
+  display: inline-block;
+  font-family: Montserrat, Verdana, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1;
+  border: .3em solid white;
 }
-.btn-primary {
-  background: #00bfff;
-  border-color: #00a8e0;
+
+input[type='button']:hover, input[type='submit']:hover, button:hover, a.button:hover {
+  background: #0c7bc8;
 }
-.btn-primary:hover {
-  background: #00a8e0;
-  border-color: #00bfff;
+
+input[type='button']:focus, input[type='submit']:focus, button:focus, a.button:focus, 
+input[type='button']:active, input[type='submit']:active, button:active, a.button:active {
+  background: transparent;
+  border-color: #084f81;
+  color: #084f81;
+
 }
-.btn-primary:focus,
-.btn-primary:active {
-  background: #00a8e0;
+
+
+/*==================
+ Let's get started!
+==================*/
+
+/*** =CORE ***/
+
+body {
+  background: #f6f6f6;
 }
-.btn-secondary {
-  background: #ffd700;
-  border-color: #f2cc00;
+
+.wrap {
+  width: 65em;
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 95%;
 }
-.btn-secondary:hover {
-  background: #f2cc00;
-  border-color: #ffd700;
+
+.smooth {
+  -webkit-transition: all .3s ease;
+  -moz-transition: all .3s ease;
+  -ms-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
 }
-.btn-secondary:focus,
-.btn-secondary:active {
-  background: #f2cc00;
+
+
+::-moz-selection {
+  background: #0e90eb;
+  color: white;
 }
-.btn-tertiary {
-  background: #999;
-  border-color: #939393;
+::selection {
+  background: #0e90eb;
+  color: white;
 }
-.btn-tertiary:hover {
-  background: #939393;
-  border-color: #999;
+
+code {
+  font-family: Consolas, 'Andale Mono WT', 'Andale Mono', 'Lucida Console', 'Lucida Sans Typewriter', 'DejaVu Sans Mono', 'Bitstream Vera Sans Mono', 'Liberation Mono', 'Nimbus Mono L', Monaco, 'Courier New', Courier, monospace;
+  font-size: .75em;
+  padding: .25em .333em;
+  background: #f9f9f9;
+  color: #666;
+  border-radius: .25em;
+  border: thin solid #eee;
 }
-.btn-tertiary:focus,
-.btn-tertiary:active {
-  background: #939393;
+
+
+
+/*** =MASTHEAD ***/
+
+.masthead {
+  background: #0e90eb;
+  padding: 1.875em 0 3.75em;
+  color: rgba(255,255,255,.85);
 }
-/* ==========================================================================
-   =ADJECTIVES
-   ========================================================================== */
-.ws-adjectives div {
+
+/*** =Logo ***/
+.logo {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 12.5em;
+  opacity: .75;
+}
+
+.logo:hover {
+  opacity: 1;
+}
+
+.logo h1 { margin: 0; }
+
+.logo span {
+  border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+  padding: 0;
+}
+
+
+/*** =Hero ***/
+
+.hero h1 {
+  color: white;
+  font-size: 3.5em;
+  line-height: 1.166667;
+  margin: .428571em 0 .214285em;
+}
+
+.hero h1 + p {
   font-size: 1.5em;
-  padding-bottom: 0.25em;
+  color: rgba(255,255,255,.9);
+  margin-bottom: .5em;
 }
-/* ==========================================================================
-   =COLOPHON
-   ========================================================================== */
+
+.hero a {
+  color: white;
+}
+
+.hero a:hover {
+  border-bottom-color: #6ebcf3;
+}
+
+.hero .button {
+  margin: 0 .8em .6em 0;
+  font-size: 1.25em;
+}
+
+.hero a.button:hover {
+  border-bottom-color: white;
+}
+.hero a.button:active {
+  border-bottom-color: #084f81;
+}
+
+
+
+/*** =CONTENT ***/
+
+.wrap--content {
+  background: white;
+  overflow: visible;
+  padding: 1.25em 0;
+
+  border: .3125em solid #eee;
+  border-top: none; border-bottom: none;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.content {
+  margin: 1em 3em 3em;
+  font-size: 1.25em;
+}
+
+.content > section + section {
+  padding-top: .75em;
+  border-top: thin solid #e6e6e6;
+  margin-top: 1.5em;
+}
+
+.content h1 {
+  margin-left: -1.6em;
+  border-left: .105em solid #0e90eb;
+  position: relative;
+  padding-left: 1.395em;
+}
+
+
+/*** =Lists ***/
+
+ul {
+  padding: 0;
+  margin: .75em 0 1em;
+}
+
+ul li:before {
+  content: '\2043';
+  margin: 0 .2em 0 -.6em;
+}
+
+ul li {
+  list-style: none;
+  margin-bottom: .75em;
+}
+
+
+/*** =FOOTER ***/
+
 .colophon {
-  clear: both;
-  text-align: center;
-  font-size: 0.875em;
-  padding: 1.714em 0;
+  font-size: .75em;
+  font-weight: 400;
+  padding-top: 1em;
   border-top: thin solid #eee;
-  margin-top: 1.714em;
+  margin-top: 2em;
+  text-align: center;
+  color: #999;
+}
+
+.colophon p + p {
+  margin-top: .75em;
+}
+
+@media (max-width: 80em) {
+  body { font-size: 100%; }
+}
+
+@media (max-width: 60em) {
+  body { font-size: 87.5%; }
+}
+
+@media (max-width: 40em) {
+  .content { margin: 1em 1.5em 3em; }
 }
